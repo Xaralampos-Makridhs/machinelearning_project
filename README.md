@@ -13,12 +13,1361 @@ This project uses a Decision Tree Classifier to predict the gender of individual
 
 - Python 3.x
 - Libraries:
-  - pandas
-  - scikit-learn
-  - graphviz (for visualizing the decision tree)
+  - pandas (pip install pandas)
+  - scikit-learn (pip install scikit-learn)
+  - graphviz (pip install grahpviz)
 
-You can install the required libraries using:
-##pip install pandas##
-pip install scikit-learn
-pip install grahpviz
 
+## SVG of the final Decision Tree
+![decision_tree](https://github.com/user-attachments/assets/4e38b7f5-e011-4a7c-b7e5-12f098a94376)
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2183pt" height="1491pt" viewBox="0.00 0.00 2183.45 1491.20">
+<g id="graph0" class="graph" transform="translate(4,1487.199951171875) scale(1)" data-name="Tree">
+
+<polygon fill="white" stroke="none" points="-4,4 -4,-1487.2 2179.45,-1487.2 2179.45,4 -4,4" style=""/>
+<!-- 0 -->
+<g id="node1" class="node" pointer-events="visible" data-name="0">
+
+<path fill="#d2e9f9" stroke="black" d="M1103.04,-1483.2C1103.04,-1483.2 983.51,-1483.2 983.51,-1483.2 977.51,-1483.2 971.51,-1477.2 971.51,-1471.2 971.51,-1471.2 971.51,-1403.2 971.51,-1403.2 971.51,-1397.2 977.51,-1391.2 983.51,-1391.2 983.51,-1391.2 1103.04,-1391.2 1103.04,-1391.2 1109.04,-1391.2 1115.04,-1397.2 1115.04,-1403.2 1115.04,-1403.2 1115.04,-1471.2 1115.04,-1471.2 1115.04,-1477.2 1109.04,-1483.2 1103.04,-1483.2" style=""/>
+<text text-anchor="middle" x="1043.28" y="-1466.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">Cr &lt;= 57.5</text>
+<text text-anchor="middle" x="1043.28" y="-1449.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.492</text>
+<text text-anchor="middle" x="1043.28" y="-1433" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 211</text>
+<text text-anchor="middle" x="1043.28" y="-1416.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [92.0, 119.0]</text>
+<text text-anchor="middle" x="1043.28" y="-1399.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 1 -->
+<g id="node2" class="node" pointer-events="visible" data-name="1">
+
+<path fill="#f5cfb4" stroke="black" d="M861.4,-1355.2C861.4,-1355.2 773.15,-1355.2 773.15,-1355.2 767.15,-1355.2 761.15,-1349.2 761.15,-1343.2 761.15,-1343.2 761.15,-1275.2 761.15,-1275.2 761.15,-1269.2 767.15,-1263.2 773.15,-1263.2 773.15,-1263.2 861.4,-1263.2 861.4,-1263.2 867.4,-1263.2 873.4,-1269.2 873.4,-1275.2 873.4,-1275.2 873.4,-1343.2 873.4,-1343.2 873.4,-1349.2 867.4,-1355.2 861.4,-1355.2" style=""/>
+<text text-anchor="middle" x="817.28" y="-1338.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">AGE &lt;= 51.5</text>
+<text text-anchor="middle" x="817.28" y="-1321.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.473</text>
+<text text-anchor="middle" x="817.28" y="-1305" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 94</text>
+<text text-anchor="middle" x="817.28" y="-1288.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [58, 36]</text>
+<text text-anchor="middle" x="817.28" y="-1271.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 0</text>
+</g>
+<!-- 0&#45;&gt;1 -->
+<g id="edge1" class="edge" data-name="0-&gt;1">
+
+<path fill="none" stroke="black" d="M971.15,-1395.99C943.08,-1380.34 911.11,-1362.52 883.62,-1347.19" style=""/>
+<polygon fill="black" stroke="black" points="885.47,-1344.21 875.03,-1342.4 882.06,-1350.33 885.47,-1344.21" style=""/>
+<text text-anchor="middle" x="880.54" y="-1361.51" font-family="Helvetica,sans-Serif" font-size="14.00" style="">True</text>
+</g>
+<!-- 38 -->
+<g id="node39" class="node" pointer-events="visible" data-name="38">
+
+<path fill="#8ac5f0" stroke="black" d="M1353.4,-1355.2C1353.4,-1355.2 1265.15,-1355.2 1265.15,-1355.2 1259.15,-1355.2 1253.15,-1349.2 1253.15,-1343.2 1253.15,-1343.2 1253.15,-1275.2 1253.15,-1275.2 1253.15,-1269.2 1259.15,-1263.2 1265.15,-1263.2 1265.15,-1263.2 1353.4,-1263.2 1353.4,-1263.2 1359.4,-1263.2 1365.4,-1269.2 1365.4,-1275.2 1365.4,-1275.2 1365.4,-1343.2 1365.4,-1343.2 1365.4,-1349.2 1359.4,-1355.2 1353.4,-1355.2" style=""/>
+<text text-anchor="middle" x="1309.28" y="-1338.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">HbA1c &lt;= 5.65</text>
+<text text-anchor="middle" x="1309.28" y="-1321.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.412</text>
+<text text-anchor="middle" x="1309.28" y="-1305" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 117</text>
+<text text-anchor="middle" x="1309.28" y="-1288.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [34, 83]</text>
+<text text-anchor="middle" x="1309.28" y="-1271.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 0&#45;&gt;38 -->
+<g id="edge38" class="edge" data-name="0-&gt;38">
+
+<path fill="none" stroke="black" d="M1115.26,-1402.1C1154.95,-1383.3 1203.89,-1360.12 1242.69,-1341.74" style=""/>
+<polygon fill="black" stroke="black" points="1243.93,-1345.03 1251.47,-1337.58 1240.93,-1338.7 1243.93,-1345.03" style=""/>
+<text text-anchor="middle" x="1244.43" y="-1356.28" font-family="Helvetica,sans-Serif" font-size="14.00" style="">False</text>
+</g>
+<!-- 2 -->
+<g id="node3" class="node" pointer-events="visible" data-name="2">
+
+<path fill="#eeab7b" stroke="black" d="M503.4,-1227.2C503.4,-1227.2 415.15,-1227.2 415.15,-1227.2 409.15,-1227.2 403.15,-1221.2 403.15,-1215.2 403.15,-1215.2 403.15,-1147.2 403.15,-1147.2 403.15,-1141.2 409.15,-1135.2 415.15,-1135.2 415.15,-1135.2 503.4,-1135.2 503.4,-1135.2 509.4,-1135.2 515.4,-1141.2 515.4,-1147.2 515.4,-1147.2 515.4,-1215.2 515.4,-1215.2 515.4,-1221.2 509.4,-1227.2 503.4,-1227.2" style=""/>
+<text text-anchor="middle" x="459.28" y="-1210.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">HDL &lt;= 0.95</text>
+<text text-anchor="middle" x="459.28" y="-1193.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.375</text>
+<text text-anchor="middle" x="459.28" y="-1177" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 56</text>
+<text text-anchor="middle" x="459.28" y="-1160.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [42, 14]</text>
+<text text-anchor="middle" x="459.28" y="-1143.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 0</text>
+</g>
+<!-- 1&#45;&gt;2 -->
+<g id="edge2" class="edge" data-name="1-&gt;2">
+
+<path fill="none" stroke="black" d="M760.95,-1288.37C697.4,-1266.01 594.1,-1229.65 526.42,-1205.83" style=""/>
+<polygon fill="black" stroke="black" points="527.89,-1202.64 517.3,-1202.62 525.57,-1209.24 527.89,-1202.64" style=""/>
+</g>
+<!-- 19 -->
+<g id="node20" class="node" pointer-events="visible" data-name="19">
+
+<path fill="#c9e4f8" stroke="black" d="M861.4,-1227.2C861.4,-1227.2 773.15,-1227.2 773.15,-1227.2 767.15,-1227.2 761.15,-1221.2 761.15,-1215.2 761.15,-1215.2 761.15,-1147.2 761.15,-1147.2 761.15,-1141.2 767.15,-1135.2 773.15,-1135.2 773.15,-1135.2 861.4,-1135.2 861.4,-1135.2 867.4,-1135.2 873.4,-1141.2 873.4,-1147.2 873.4,-1147.2 873.4,-1215.2 873.4,-1215.2 873.4,-1221.2 867.4,-1227.2 861.4,-1227.2" style=""/>
+<text text-anchor="middle" x="817.28" y="-1210.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">HDL &lt;= 1.425</text>
+<text text-anchor="middle" x="817.28" y="-1193.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.488</text>
+<text text-anchor="middle" x="817.28" y="-1177" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 38</text>
+<text text-anchor="middle" x="817.28" y="-1160.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [16, 22]</text>
+<text text-anchor="middle" x="817.28" y="-1143.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 1&#45;&gt;19 -->
+<g id="edge19" class="edge" data-name="1-&gt;19">
+
+<path fill="none" stroke="black" d="M817.28,-1262.71C817.28,-1255.04 817.28,-1246.99 817.28,-1239.07" style=""/>
+<polygon fill="black" stroke="black" points="820.78,-1239.14 817.28,-1229.14 813.78,-1239.14 820.78,-1239.14" style=""/>
+</g>
+<!-- 3 -->
+<g id="node4" class="node" pointer-events="visible" data-name="3">
+
+<path fill="#ebf5fc" stroke="black" d="M318.62,-1099.2C318.62,-1099.2 237.94,-1099.2 237.94,-1099.2 231.94,-1099.2 225.94,-1093.2 225.94,-1087.2 225.94,-1087.2 225.94,-1019.2 225.94,-1019.2 225.94,-1013.2 231.94,-1007.2 237.94,-1007.2 237.94,-1007.2 318.62,-1007.2 318.62,-1007.2 324.62,-1007.2 330.62,-1013.2 330.62,-1019.2 330.62,-1019.2 330.62,-1087.2 330.62,-1087.2 330.62,-1093.2 324.62,-1099.2 318.62,-1099.2" style=""/>
+<text text-anchor="middle" x="278.28" y="-1082.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">Urea &lt;= 3.95</text>
+<text text-anchor="middle" x="278.28" y="-1065.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.499</text>
+<text text-anchor="middle" x="278.28" y="-1049" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 19</text>
+<text text-anchor="middle" x="278.28" y="-1032.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [9, 10]</text>
+<text text-anchor="middle" x="278.28" y="-1015.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 2&#45;&gt;3 -->
+<g id="edge3" class="edge" data-name="2-&gt;3">
+
+<path fill="none" stroke="black" d="M403,-1141.02C383.02,-1127.12 360.43,-1111.39 340.02,-1097.18" style=""/>
+<polygon fill="black" stroke="black" points="342.27,-1094.48 332.06,-1091.64 338.27,-1100.22 342.27,-1094.48" style=""/>
+</g>
+<!-- 12 -->
+<g id="node13" class="node" pointer-events="visible" data-name="12">
+
+<path fill="#e89051" stroke="black" d="M499.62,-1099.2C499.62,-1099.2 418.94,-1099.2 418.94,-1099.2 412.94,-1099.2 406.94,-1093.2 406.94,-1087.2 406.94,-1087.2 406.94,-1019.2 406.94,-1019.2 406.94,-1013.2 412.94,-1007.2 418.94,-1007.2 418.94,-1007.2 499.62,-1007.2 499.62,-1007.2 505.62,-1007.2 511.62,-1013.2 511.62,-1019.2 511.62,-1019.2 511.62,-1087.2 511.62,-1087.2 511.62,-1093.2 505.62,-1099.2 499.62,-1099.2" style=""/>
+<text text-anchor="middle" x="459.28" y="-1082.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">TG &lt;= 1.55</text>
+<text text-anchor="middle" x="459.28" y="-1065.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.193</text>
+<text text-anchor="middle" x="459.28" y="-1049" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 37</text>
+<text text-anchor="middle" x="459.28" y="-1032.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [33, 4]</text>
+<text text-anchor="middle" x="459.28" y="-1015.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 0</text>
+</g>
+<!-- 2&#45;&gt;12 -->
+<g id="edge12" class="edge" data-name="2-&gt;12">
+
+<path fill="none" stroke="black" d="M459.28,-1134.71C459.28,-1127.04 459.28,-1118.99 459.28,-1111.07" style=""/>
+<polygon fill="black" stroke="black" points="462.78,-1111.14 459.28,-1101.14 455.78,-1111.14 462.78,-1111.14" style=""/>
+</g>
+<!-- 4 -->
+<g id="node5" class="node" pointer-events="visible" data-name="4">
+
+<path fill="#eca06a" stroke="black" d="M199.94,-971.2C199.94,-971.2 124.62,-971.2 124.62,-971.2 118.62,-971.2 112.62,-965.2 112.62,-959.2 112.62,-959.2 112.62,-891.2 112.62,-891.2 112.62,-885.2 118.62,-879.2 124.62,-879.2 124.62,-879.2 199.94,-879.2 199.94,-879.2 205.94,-879.2 211.94,-885.2 211.94,-891.2 211.94,-891.2 211.94,-959.2 211.94,-959.2 211.94,-965.2 205.94,-971.2 199.94,-971.2" style=""/>
+<text text-anchor="middle" x="162.28" y="-954.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">Cr &lt;= 53.5</text>
+<text text-anchor="middle" x="162.28" y="-937.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.32</text>
+<text text-anchor="middle" x="162.28" y="-921" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 10</text>
+<text text-anchor="middle" x="162.28" y="-904.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [8, 2]</text>
+<text text-anchor="middle" x="162.28" y="-887.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 0</text>
+</g>
+<!-- 3&#45;&gt;4 -->
+<g id="edge4" class="edge" data-name="3-&gt;4">
+
+<path fill="none" stroke="black" d="M236.4,-1006.71C228.43,-998.06 220.02,-988.92 211.84,-980.04" style=""/>
+<polygon fill="black" stroke="black" points="214.47,-977.72 205.12,-972.74 209.32,-982.46 214.47,-977.72" style=""/>
+</g>
+<!-- 9 -->
+<g id="node10" class="node" pointer-events="visible" data-name="9">
+
+<path fill="#52a9e8" stroke="black" d="M314.33,-971.2C314.33,-971.2 242.22,-971.2 242.22,-971.2 236.22,-971.2 230.22,-965.2 230.22,-959.2 230.22,-959.2 230.22,-891.2 230.22,-891.2 230.22,-885.2 236.22,-879.2 242.22,-879.2 242.22,-879.2 314.33,-879.2 314.33,-879.2 320.33,-879.2 326.33,-885.2 326.33,-891.2 326.33,-891.2 326.33,-959.2 326.33,-959.2 326.33,-965.2 320.33,-971.2 314.33,-971.2" style=""/>
+<text text-anchor="middle" x="278.28" y="-954.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">Class &lt;= 1.5</text>
+<text text-anchor="middle" x="278.28" y="-937.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.198</text>
+<text text-anchor="middle" x="278.28" y="-921" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 9</text>
+<text text-anchor="middle" x="278.28" y="-904.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [1, 8]</text>
+<text text-anchor="middle" x="278.28" y="-887.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 3&#45;&gt;9 -->
+<g id="edge9" class="edge" data-name="3-&gt;9">
+
+<path fill="none" stroke="black" d="M278.28,-1006.71C278.28,-999.04 278.28,-990.99 278.28,-983.07" style=""/>
+<polygon fill="black" stroke="black" points="281.78,-983.14 278.28,-973.14 274.78,-983.14 281.78,-983.14" style=""/>
+</g>
+<!-- 5 -->
+<g id="node6" class="node" pointer-events="visible" data-name="5">
+
+<path fill="#e58139" stroke="black" d="M84.33,-834.9C84.33,-834.9 12.22,-834.9 12.22,-834.9 6.22,-834.9 0.22,-828.9 0.22,-822.9 0.22,-822.9 0.22,-771.5 0.22,-771.5 0.22,-765.5 6.22,-759.5 12.22,-759.5 12.22,-759.5 84.33,-759.5 84.33,-759.5 90.33,-759.5 96.33,-765.5 96.33,-771.5 96.33,-771.5 96.33,-822.9 96.33,-822.9 96.33,-828.9 90.33,-834.9 84.33,-834.9" style=""/>
+<text text-anchor="middle" x="48.28" y="-818.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.0</text>
+<text text-anchor="middle" x="48.28" y="-801.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 7</text>
+<text text-anchor="middle" x="48.28" y="-784.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [7, 0]</text>
+<text text-anchor="middle" x="48.28" y="-767.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 0</text>
+</g>
+<!-- 4&#45;&gt;5 -->
+<g id="edge5" class="edge" data-name="4-&gt;5">
+
+<path fill="none" stroke="black" d="M121.12,-878.71C110.85,-867.36 99.84,-855.19 89.57,-843.84" style=""/>
+<polygon fill="black" stroke="black" points="92.2,-841.53 82.9,-836.47 87.01,-846.23 92.2,-841.53" style=""/>
+</g>
+<!-- 6 -->
+<g id="node7" class="node" pointer-events="visible" data-name="6">
+
+<path fill="#9ccef2" stroke="black" d="M199.33,-843.2C199.33,-843.2 127.22,-843.2 127.22,-843.2 121.22,-843.2 115.22,-837.2 115.22,-831.2 115.22,-831.2 115.22,-763.2 115.22,-763.2 115.22,-757.2 121.22,-751.2 127.22,-751.2 127.22,-751.2 199.33,-751.2 199.33,-751.2 205.33,-751.2 211.33,-757.2 211.33,-763.2 211.33,-763.2 211.33,-831.2 211.33,-831.2 211.33,-837.2 205.33,-843.2 199.33,-843.2" style=""/>
+<text text-anchor="middle" x="163.28" y="-826.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">Chol &lt;= 4.2</text>
+<text text-anchor="middle" x="163.28" y="-809.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.444</text>
+<text text-anchor="middle" x="163.28" y="-793" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 3</text>
+<text text-anchor="middle" x="163.28" y="-776.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [1, 2]</text>
+<text text-anchor="middle" x="163.28" y="-759.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 4&#45;&gt;6 -->
+<g id="edge6" class="edge" data-name="4-&gt;6">
+
+<path fill="none" stroke="black" d="M162.64,-878.71C162.7,-871.04 162.76,-862.99 162.83,-855.07" style=""/>
+<polygon fill="black" stroke="black" points="166.33,-855.16 162.9,-845.14 159.33,-855.11 166.33,-855.16" style=""/>
+</g>
+<!-- 7 -->
+<g id="node8" class="node" pointer-events="visible" data-name="7">
+
+<path fill="#399de5" stroke="black" d="M142.33,-706.9C142.33,-706.9 70.22,-706.9 70.22,-706.9 64.22,-706.9 58.22,-700.9 58.22,-694.9 58.22,-694.9 58.22,-643.5 58.22,-643.5 58.22,-637.5 64.22,-631.5 70.22,-631.5 70.22,-631.5 142.33,-631.5 142.33,-631.5 148.33,-631.5 154.33,-637.5 154.33,-643.5 154.33,-643.5 154.33,-694.9 154.33,-694.9 154.33,-700.9 148.33,-706.9 142.33,-706.9" style=""/>
+<text text-anchor="middle" x="106.28" y="-690.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.0</text>
+<text text-anchor="middle" x="106.28" y="-673.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 2</text>
+<text text-anchor="middle" x="106.28" y="-656.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [0, 2]</text>
+<text text-anchor="middle" x="106.28" y="-639.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 6&#45;&gt;7 -->
+<g id="edge7" class="edge" data-name="6-&gt;7">
+
+<path fill="none" stroke="black" d="M142.7,-750.71C137.82,-739.92 132.6,-728.39 127.68,-717.52" style=""/>
+<polygon fill="black" stroke="black" points="131.01,-716.39 123.7,-708.72 124.64,-719.28 131.01,-716.39" style=""/>
+</g>
+<!-- 8 -->
+<g id="node9" class="node" pointer-events="visible" data-name="8">
+
+<path fill="#e58139" stroke="black" d="M257.33,-706.9C257.33,-706.9 185.22,-706.9 185.22,-706.9 179.22,-706.9 173.22,-700.9 173.22,-694.9 173.22,-694.9 173.22,-643.5 173.22,-643.5 173.22,-637.5 179.22,-631.5 185.22,-631.5 185.22,-631.5 257.33,-631.5 257.33,-631.5 263.33,-631.5 269.33,-637.5 269.33,-643.5 269.33,-643.5 269.33,-694.9 269.33,-694.9 269.33,-700.9 263.33,-706.9 257.33,-706.9" style=""/>
+<text text-anchor="middle" x="221.28" y="-690.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.0</text>
+<text text-anchor="middle" x="221.28" y="-673.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 1</text>
+<text text-anchor="middle" x="221.28" y="-656.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [1, 0]</text>
+<text text-anchor="middle" x="221.28" y="-639.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 0</text>
+</g>
+<!-- 6&#45;&gt;8 -->
+<g id="edge8" class="edge" data-name="6-&gt;8">
+
+<path fill="none" stroke="black" d="M184.22,-750.71C189.18,-739.92 194.49,-728.39 199.5,-717.52" style=""/>
+<polygon fill="black" stroke="black" points="202.54,-719.27 203.55,-708.72 196.19,-716.34 202.54,-719.27" style=""/>
+</g>
+<!-- 10 -->
+<g id="node11" class="node" pointer-events="visible" data-name="10">
+
+<path fill="#399de5" stroke="black" d="M314.33,-834.9C314.33,-834.9 242.22,-834.9 242.22,-834.9 236.22,-834.9 230.22,-828.9 230.22,-822.9 230.22,-822.9 230.22,-771.5 230.22,-771.5 230.22,-765.5 236.22,-759.5 242.22,-759.5 242.22,-759.5 314.33,-759.5 314.33,-759.5 320.33,-759.5 326.33,-765.5 326.33,-771.5 326.33,-771.5 326.33,-822.9 326.33,-822.9 326.33,-828.9 320.33,-834.9 314.33,-834.9" style=""/>
+<text text-anchor="middle" x="278.28" y="-818.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.0</text>
+<text text-anchor="middle" x="278.28" y="-801.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 8</text>
+<text text-anchor="middle" x="278.28" y="-784.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [0, 8]</text>
+<text text-anchor="middle" x="278.28" y="-767.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 9&#45;&gt;10 -->
+<g id="edge10" class="edge" data-name="9-&gt;10">
+
+<path fill="none" stroke="black" d="M278.28,-878.71C278.28,-868.25 278.28,-857.1 278.28,-846.53" style=""/>
+<polygon fill="black" stroke="black" points="281.78,-846.86 278.28,-836.86 274.78,-846.86 281.78,-846.86" style=""/>
+</g>
+<!-- 11 -->
+<g id="node12" class="node" pointer-events="visible" data-name="11">
+
+<path fill="#e58139" stroke="black" d="M429.33,-834.9C429.33,-834.9 357.22,-834.9 357.22,-834.9 351.22,-834.9 345.22,-828.9 345.22,-822.9 345.22,-822.9 345.22,-771.5 345.22,-771.5 345.22,-765.5 351.22,-759.5 357.22,-759.5 357.22,-759.5 429.33,-759.5 429.33,-759.5 435.33,-759.5 441.33,-765.5 441.33,-771.5 441.33,-771.5 441.33,-822.9 441.33,-822.9 441.33,-828.9 435.33,-834.9 429.33,-834.9" style=""/>
+<text text-anchor="middle" x="393.28" y="-818.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.0</text>
+<text text-anchor="middle" x="393.28" y="-801.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 1</text>
+<text text-anchor="middle" x="393.28" y="-784.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [1, 0]</text>
+<text text-anchor="middle" x="393.28" y="-767.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 0</text>
+</g>
+<!-- 9&#45;&gt;11 -->
+<g id="edge11" class="edge" data-name="9-&gt;11">
+
+<path fill="none" stroke="black" d="M319.79,-878.71C330.15,-867.36 341.26,-855.19 351.62,-843.84" style=""/>
+<polygon fill="black" stroke="black" points="354.2,-846.21 358.36,-836.46 349.03,-841.49 354.2,-846.21" style=""/>
+</g>
+<!-- 13 -->
+<g id="node14" class="node" pointer-events="visible" data-name="13">
+
+<path fill="#e58139" stroke="black" d="M436.62,-962.9C436.62,-962.9 355.94,-962.9 355.94,-962.9 349.94,-962.9 343.94,-956.9 343.94,-950.9 343.94,-950.9 343.94,-899.5 343.94,-899.5 343.94,-893.5 349.94,-887.5 355.94,-887.5 355.94,-887.5 436.62,-887.5 436.62,-887.5 442.62,-887.5 448.62,-893.5 448.62,-899.5 448.62,-899.5 448.62,-950.9 448.62,-950.9 448.62,-956.9 442.62,-962.9 436.62,-962.9" style=""/>
+<text text-anchor="middle" x="396.28" y="-946.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.0</text>
+<text text-anchor="middle" x="396.28" y="-929.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 22</text>
+<text text-anchor="middle" x="396.28" y="-912.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [22, 0]</text>
+<text text-anchor="middle" x="396.28" y="-895.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 0</text>
+</g>
+<!-- 12&#45;&gt;13 -->
+<g id="edge13" class="edge" data-name="12-&gt;13">
+
+<path fill="none" stroke="black" d="M436.53,-1006.71C431.14,-995.92 425.37,-984.39 419.94,-973.52" style=""/>
+<polygon fill="black" stroke="black" points="423.13,-972.08 415.53,-964.7 416.87,-975.21 423.13,-972.08" style=""/>
+</g>
+<!-- 14 -->
+<g id="node15" class="node" pointer-events="visible" data-name="14">
+
+<path fill="#eeaf81" stroke="black" d="M558.62,-971.2C558.62,-971.2 477.94,-971.2 477.94,-971.2 471.94,-971.2 465.94,-965.2 465.94,-959.2 465.94,-959.2 465.94,-891.2 465.94,-891.2 465.94,-885.2 471.94,-879.2 477.94,-879.2 477.94,-879.2 558.62,-879.2 558.62,-879.2 564.62,-879.2 570.62,-885.2 570.62,-891.2 570.62,-891.2 570.62,-959.2 570.62,-959.2 570.62,-965.2 564.62,-971.2 558.62,-971.2" style=""/>
+<text text-anchor="middle" x="518.28" y="-954.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">LDL &lt;= 2.55</text>
+<text text-anchor="middle" x="518.28" y="-937.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.391</text>
+<text text-anchor="middle" x="518.28" y="-921" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 15</text>
+<text text-anchor="middle" x="518.28" y="-904.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [11, 4]</text>
+<text text-anchor="middle" x="518.28" y="-887.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 0</text>
+</g>
+<!-- 12&#45;&gt;14 -->
+<g id="edge14" class="edge" data-name="12-&gt;14">
+
+<path fill="none" stroke="black" d="M480.58,-1006.71C484.34,-998.68 488.29,-990.24 492.16,-981.97" style=""/>
+<polygon fill="black" stroke="black" points="495.3,-983.53 496.37,-972.99 488.96,-980.56 495.3,-983.53" style=""/>
+</g>
+<!-- 15 -->
+<g id="node16" class="node" pointer-events="visible" data-name="15">
+
+<path fill="#e58139" stroke="black" d="M548.33,-834.9C548.33,-834.9 476.22,-834.9 476.22,-834.9 470.22,-834.9 464.22,-828.9 464.22,-822.9 464.22,-822.9 464.22,-771.5 464.22,-771.5 464.22,-765.5 470.22,-759.5 476.22,-759.5 476.22,-759.5 548.33,-759.5 548.33,-759.5 554.33,-759.5 560.33,-765.5 560.33,-771.5 560.33,-771.5 560.33,-822.9 560.33,-822.9 560.33,-828.9 554.33,-834.9 548.33,-834.9" style=""/>
+<text text-anchor="middle" x="512.28" y="-818.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.0</text>
+<text text-anchor="middle" x="512.28" y="-801.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 6</text>
+<text text-anchor="middle" x="512.28" y="-784.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [6, 0]</text>
+<text text-anchor="middle" x="512.28" y="-767.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 0</text>
+</g>
+<!-- 14&#45;&gt;15 -->
+<g id="edge15" class="edge" data-name="14-&gt;15">
+
+<path fill="none" stroke="black" d="M516.11,-878.71C515.61,-868.25 515.08,-857.1 514.58,-846.53" style=""/>
+<polygon fill="black" stroke="black" points="518.09,-846.68 514.12,-836.86 511.1,-847.01 518.09,-846.68" style=""/>
+</g>
+<!-- 16 -->
+<g id="node17" class="node" pointer-events="visible" data-name="16">
+
+<path fill="#fae6d7" stroke="black" d="M663.33,-843.2C663.33,-843.2 591.22,-843.2 591.22,-843.2 585.22,-843.2 579.22,-837.2 579.22,-831.2 579.22,-831.2 579.22,-763.2 579.22,-763.2 579.22,-757.2 585.22,-751.2 591.22,-751.2 591.22,-751.2 663.33,-751.2 663.33,-751.2 669.33,-751.2 675.33,-757.2 675.33,-763.2 675.33,-763.2 675.33,-831.2 675.33,-831.2 675.33,-837.2 669.33,-843.2 663.33,-843.2" style=""/>
+<text text-anchor="middle" x="627.28" y="-826.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">LDL &lt;= 3.25</text>
+<text text-anchor="middle" x="627.28" y="-809.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.494</text>
+<text text-anchor="middle" x="627.28" y="-793" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 9</text>
+<text text-anchor="middle" x="627.28" y="-776.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [5, 4]</text>
+<text text-anchor="middle" x="627.28" y="-759.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 0</text>
+</g>
+<!-- 14&#45;&gt;16 -->
+<g id="edge16" class="edge" data-name="14-&gt;16">
+
+<path fill="none" stroke="black" d="M557.63,-878.71C565.04,-870.15 572.85,-861.11 580.46,-852.32" style=""/>
+<polygon fill="black" stroke="black" points="583.1,-854.62 586.99,-844.77 577.8,-850.04 583.1,-854.62" style=""/>
+</g>
+<!-- 17 -->
+<g id="node18" class="node" pointer-events="visible" data-name="17">
+
+<path fill="#399de5" stroke="black" d="M549.33,-706.9C549.33,-706.9 477.22,-706.9 477.22,-706.9 471.22,-706.9 465.22,-700.9 465.22,-694.9 465.22,-694.9 465.22,-643.5 465.22,-643.5 465.22,-637.5 471.22,-631.5 477.22,-631.5 477.22,-631.5 549.33,-631.5 549.33,-631.5 555.33,-631.5 561.33,-637.5 561.33,-643.5 561.33,-643.5 561.33,-694.9 561.33,-694.9 561.33,-700.9 555.33,-706.9 549.33,-706.9" style=""/>
+<text text-anchor="middle" x="513.28" y="-690.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.0</text>
+<text text-anchor="middle" x="513.28" y="-673.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 4</text>
+<text text-anchor="middle" x="513.28" y="-656.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [0, 4]</text>
+<text text-anchor="middle" x="513.28" y="-639.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 16&#45;&gt;17 -->
+<g id="edge17" class="edge" data-name="16-&gt;17">
+
+<path fill="none" stroke="black" d="M586.12,-750.71C575.85,-739.36 564.84,-727.19 554.57,-715.84" style=""/>
+<polygon fill="black" stroke="black" points="557.2,-713.53 547.9,-708.47 552.01,-718.23 557.2,-713.53" style=""/>
+</g>
+<!-- 18 -->
+<g id="node19" class="node" pointer-events="visible" data-name="18">
+
+<path fill="#e58139" stroke="black" d="M664.33,-706.9C664.33,-706.9 592.22,-706.9 592.22,-706.9 586.22,-706.9 580.22,-700.9 580.22,-694.9 580.22,-694.9 580.22,-643.5 580.22,-643.5 580.22,-637.5 586.22,-631.5 592.22,-631.5 592.22,-631.5 664.33,-631.5 664.33,-631.5 670.33,-631.5 676.33,-637.5 676.33,-643.5 676.33,-643.5 676.33,-694.9 676.33,-694.9 676.33,-700.9 670.33,-706.9 664.33,-706.9" style=""/>
+<text text-anchor="middle" x="628.28" y="-690.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.0</text>
+<text text-anchor="middle" x="628.28" y="-673.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 5</text>
+<text text-anchor="middle" x="628.28" y="-656.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [5, 0]</text>
+<text text-anchor="middle" x="628.28" y="-639.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 0</text>
+</g>
+<!-- 16&#45;&gt;18 -->
+<g id="edge18" class="edge" data-name="16-&gt;18">
+
+<path fill="none" stroke="black" d="M627.64,-750.71C627.72,-740.25 627.81,-729.1 627.89,-718.53" style=""/>
+<polygon fill="black" stroke="black" points="631.39,-718.88 627.97,-708.86 624.39,-718.83 631.39,-718.88" style=""/>
+</g>
+<!-- 20 -->
+<g id="node21" class="node" pointer-events="visible" data-name="20">
+
+<path fill="#97ccf1" stroke="black" d="M800.4,-1099.2C800.4,-1099.2 712.15,-1099.2 712.15,-1099.2 706.15,-1099.2 700.15,-1093.2 700.15,-1087.2 700.15,-1087.2 700.15,-1019.2 700.15,-1019.2 700.15,-1013.2 706.15,-1007.2 712.15,-1007.2 712.15,-1007.2 800.4,-1007.2 800.4,-1007.2 806.4,-1007.2 812.4,-1013.2 812.4,-1019.2 812.4,-1019.2 812.4,-1087.2 812.4,-1087.2 812.4,-1093.2 806.4,-1099.2 800.4,-1099.2" style=""/>
+<text text-anchor="middle" x="756.28" y="-1082.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">Cr &lt;= 25.5</text>
+<text text-anchor="middle" x="756.28" y="-1065.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.437</text>
+<text text-anchor="middle" x="756.28" y="-1049" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 31</text>
+<text text-anchor="middle" x="756.28" y="-1032.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [10, 21]</text>
+<text text-anchor="middle" x="756.28" y="-1015.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 19&#45;&gt;20 -->
+<g id="edge20" class="edge" data-name="19-&gt;20">
+
+<path fill="none" stroke="black" d="M795.25,-1134.71C791.37,-1126.68 787.28,-1118.24 783.28,-1109.97" style=""/>
+<polygon fill="black" stroke="black" points="786.43,-1108.46 778.93,-1100.98 780.13,-1111.51 786.43,-1108.46" style=""/>
+</g>
+<!-- 35 -->
+<g id="node36" class="node" pointer-events="visible" data-name="35">
+
+<path fill="#e9965a" stroke="black" d="M914.33,-1099.2C914.33,-1099.2 842.22,-1099.2 842.22,-1099.2 836.22,-1099.2 830.22,-1093.2 830.22,-1087.2 830.22,-1087.2 830.22,-1019.2 830.22,-1019.2 830.22,-1013.2 836.22,-1007.2 842.22,-1007.2 842.22,-1007.2 914.33,-1007.2 914.33,-1007.2 920.33,-1007.2 926.33,-1013.2 926.33,-1019.2 926.33,-1019.2 926.33,-1087.2 926.33,-1087.2 926.33,-1093.2 920.33,-1099.2 914.33,-1099.2" style=""/>
+<text text-anchor="middle" x="878.28" y="-1082.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">Chol &lt;= 3.55</text>
+<text text-anchor="middle" x="878.28" y="-1065.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.245</text>
+<text text-anchor="middle" x="878.28" y="-1049" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 7</text>
+<text text-anchor="middle" x="878.28" y="-1032.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [6, 1]</text>
+<text text-anchor="middle" x="878.28" y="-1015.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 0</text>
+</g>
+<!-- 19&#45;&gt;35 -->
+<g id="edge35" class="edge" data-name="19-&gt;35">
+
+<path fill="none" stroke="black" d="M839.3,-1134.71C843.19,-1126.68 847.27,-1118.24 851.28,-1109.97" style=""/>
+<polygon fill="black" stroke="black" points="854.42,-1111.51 855.63,-1100.98 848.12,-1108.46 854.42,-1111.51" style=""/>
+</g>
+<!-- 21 -->
+<g id="node22" class="node" pointer-events="visible" data-name="21">
+
+<path fill="#e58139" stroke="black" d="M672.33,-962.9C672.33,-962.9 600.22,-962.9 600.22,-962.9 594.22,-962.9 588.22,-956.9 588.22,-950.9 588.22,-950.9 588.22,-899.5 588.22,-899.5 588.22,-893.5 594.22,-887.5 600.22,-887.5 600.22,-887.5 672.33,-887.5 672.33,-887.5 678.33,-887.5 684.33,-893.5 684.33,-899.5 684.33,-899.5 684.33,-950.9 684.33,-950.9 684.33,-956.9 678.33,-962.9 672.33,-962.9" style=""/>
+<text text-anchor="middle" x="636.28" y="-946.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.0</text>
+<text text-anchor="middle" x="636.28" y="-929.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 3</text>
+<text text-anchor="middle" x="636.28" y="-912.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [3, 0]</text>
+<text text-anchor="middle" x="636.28" y="-895.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 0</text>
+</g>
+<!-- 20&#45;&gt;21 -->
+<g id="edge21" class="edge" data-name="20-&gt;21">
+
+<path fill="none" stroke="black" d="M712.95,-1006.71C702.04,-995.25 690.33,-982.96 679.43,-971.51" style=""/>
+<polygon fill="black" stroke="black" points="682.13,-969.27 672.7,-964.44 677.06,-974.1 682.13,-969.27" style=""/>
+</g>
+<!-- 22 -->
+<g id="node23" class="node" pointer-events="visible" data-name="22">
+
+<path fill="#7bbeee" stroke="black" d="M800.18,-971.2C800.18,-971.2 714.38,-971.2 714.38,-971.2 708.38,-971.2 702.38,-965.2 702.38,-959.2 702.38,-959.2 702.38,-891.2 702.38,-891.2 702.38,-885.2 708.38,-879.2 714.38,-879.2 714.38,-879.2 800.18,-879.2 800.18,-879.2 806.18,-879.2 812.18,-885.2 812.18,-891.2 812.18,-891.2 812.18,-959.2 812.18,-959.2 812.18,-965.2 806.18,-971.2 800.18,-971.2" style=""/>
+<text text-anchor="middle" x="757.28" y="-954.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">HbA1c &lt;= 12.3</text>
+<text text-anchor="middle" x="757.28" y="-937.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.375</text>
+<text text-anchor="middle" x="757.28" y="-921" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 28</text>
+<text text-anchor="middle" x="757.28" y="-904.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [7, 21]</text>
+<text text-anchor="middle" x="757.28" y="-887.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 20&#45;&gt;22 -->
+<g id="edge22" class="edge" data-name="20-&gt;22">
+
+<path fill="none" stroke="black" d="M756.64,-1006.71C756.7,-999.04 756.76,-990.99 756.83,-983.07" style=""/>
+<polygon fill="black" stroke="black" points="760.33,-983.16 756.9,-973.14 753.33,-983.11 760.33,-983.16" style=""/>
+</g>
+<!-- 23 -->
+<g id="node24" class="node" pointer-events="visible" data-name="23">
+
+<path fill="#68b4eb" stroke="black" d="M796.62,-843.2C796.62,-843.2 715.94,-843.2 715.94,-843.2 709.94,-843.2 703.94,-837.2 703.94,-831.2 703.94,-831.2 703.94,-763.2 703.94,-763.2 703.94,-757.2 709.94,-751.2 715.94,-751.2 715.94,-751.2 796.62,-751.2 796.62,-751.2 802.62,-751.2 808.62,-757.2 808.62,-763.2 808.62,-763.2 808.62,-831.2 808.62,-831.2 808.62,-837.2 802.62,-843.2 796.62,-843.2" style=""/>
+<text text-anchor="middle" x="756.28" y="-826.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">Cr &lt;= 43.5</text>
+<text text-anchor="middle" x="756.28" y="-809.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.311</text>
+<text text-anchor="middle" x="756.28" y="-793" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 26</text>
+<text text-anchor="middle" x="756.28" y="-776.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [5, 21]</text>
+<text text-anchor="middle" x="756.28" y="-759.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 22&#45;&gt;23 -->
+<g id="edge23" class="edge" data-name="22-&gt;23">
+
+<path fill="none" stroke="black" d="M756.92,-878.71C756.86,-871.04 756.79,-862.99 756.73,-855.07" style=""/>
+<polygon fill="black" stroke="black" points="760.23,-855.11 756.65,-845.14 753.23,-855.16 760.23,-855.11" style=""/>
+</g>
+<!-- 34 -->
+<g id="node35" class="node" pointer-events="visible" data-name="34">
+
+<path fill="#e58139" stroke="black" d="M910.33,-834.9C910.33,-834.9 838.22,-834.9 838.22,-834.9 832.22,-834.9 826.22,-828.9 826.22,-822.9 826.22,-822.9 826.22,-771.5 826.22,-771.5 826.22,-765.5 832.22,-759.5 838.22,-759.5 838.22,-759.5 910.33,-759.5 910.33,-759.5 916.33,-759.5 922.33,-765.5 922.33,-771.5 922.33,-771.5 922.33,-822.9 922.33,-822.9 922.33,-828.9 916.33,-834.9 910.33,-834.9" style=""/>
+<text text-anchor="middle" x="874.28" y="-818.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.0</text>
+<text text-anchor="middle" x="874.28" y="-801.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 2</text>
+<text text-anchor="middle" x="874.28" y="-784.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [2, 0]</text>
+<text text-anchor="middle" x="874.28" y="-767.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 0</text>
+</g>
+<!-- 22&#45;&gt;34 -->
+<g id="edge34" class="edge" data-name="22-&gt;34">
+
+<path fill="none" stroke="black" d="M799.52,-878.71C810.16,-867.25 821.58,-854.96 832.21,-843.51" style=""/>
+<polygon fill="black" stroke="black" points="834.52,-846.16 838.76,-836.45 829.39,-841.4 834.52,-846.16" style=""/>
+</g>
+<!-- 24 -->
+<g id="node25" class="node" pointer-events="visible" data-name="24">
+
+<path fill="#399de5" stroke="black" d="M794.62,-706.9C794.62,-706.9 713.94,-706.9 713.94,-706.9 707.94,-706.9 701.94,-700.9 701.94,-694.9 701.94,-694.9 701.94,-643.5 701.94,-643.5 701.94,-637.5 707.94,-631.5 713.94,-631.5 713.94,-631.5 794.62,-631.5 794.62,-631.5 800.62,-631.5 806.62,-637.5 806.62,-643.5 806.62,-643.5 806.62,-694.9 806.62,-694.9 806.62,-700.9 800.62,-706.9 794.62,-706.9" style=""/>
+<text text-anchor="middle" x="754.28" y="-690.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.0</text>
+<text text-anchor="middle" x="754.28" y="-673.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 13</text>
+<text text-anchor="middle" x="754.28" y="-656.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [0, 13]</text>
+<text text-anchor="middle" x="754.28" y="-639.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 23&#45;&gt;24 -->
+<g id="edge24" class="edge" data-name="23-&gt;24">
+
+<path fill="none" stroke="black" d="M755.56,-750.71C755.39,-740.25 755.21,-729.1 755.04,-718.53" style=""/>
+<polygon fill="black" stroke="black" points="758.55,-718.8 754.89,-708.86 751.55,-718.91 758.55,-718.8" style=""/>
+</g>
+<!-- 25 -->
+<g id="node26" class="node" pointer-events="visible" data-name="25">
+
+<path fill="#b5daf5" stroke="black" d="M911.94,-715.2C911.94,-715.2 836.62,-715.2 836.62,-715.2 830.62,-715.2 824.62,-709.2 824.62,-703.2 824.62,-703.2 824.62,-635.2 824.62,-635.2 824.62,-629.2 830.62,-623.2 836.62,-623.2 836.62,-623.2 911.94,-623.2 911.94,-623.2 917.94,-623.2 923.94,-629.2 923.94,-635.2 923.94,-635.2 923.94,-703.2 923.94,-703.2 923.94,-709.2 917.94,-715.2 911.94,-715.2" style=""/>
+<text text-anchor="middle" x="874.28" y="-698.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">LDL &lt;= 3.95</text>
+<text text-anchor="middle" x="874.28" y="-681.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.473</text>
+<text text-anchor="middle" x="874.28" y="-665" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 13</text>
+<text text-anchor="middle" x="874.28" y="-648.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [5, 8]</text>
+<text text-anchor="middle" x="874.28" y="-631.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 23&#45;&gt;25 -->
+<g id="edge25" class="edge" data-name="23-&gt;25">
+
+<path fill="none" stroke="black" d="M798.88,-750.71C807.07,-741.97 815.71,-732.74 824.11,-723.77" style=""/>
+<polygon fill="black" stroke="black" points="826.42,-726.42 830.7,-716.73 821.31,-721.63 826.42,-726.42" style=""/>
+</g>
+<!-- 26 -->
+<g id="node27" class="node" pointer-events="visible" data-name="26">
+
+<path fill="#83c2ef" stroke="black" d="M869.94,-587.2C869.94,-587.2 794.62,-587.2 794.62,-587.2 788.62,-587.2 782.62,-581.2 782.62,-575.2 782.62,-575.2 782.62,-507.2 782.62,-507.2 782.62,-501.2 788.62,-495.2 794.62,-495.2 794.62,-495.2 869.94,-495.2 869.94,-495.2 875.94,-495.2 881.94,-501.2 881.94,-507.2 881.94,-507.2 881.94,-575.2 881.94,-575.2 881.94,-581.2 875.94,-587.2 869.94,-587.2" style=""/>
+<text text-anchor="middle" x="832.28" y="-570.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">Cr &lt;= 45.0</text>
+<text text-anchor="middle" x="832.28" y="-553.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.397</text>
+<text text-anchor="middle" x="832.28" y="-537" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 11</text>
+<text text-anchor="middle" x="832.28" y="-520.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [3, 8]</text>
+<text text-anchor="middle" x="832.28" y="-503.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 25&#45;&gt;26 -->
+<g id="edge26" class="edge" data-name="25-&gt;26">
+
+<path fill="none" stroke="black" d="M859.11,-622.71C856.5,-614.86 853.75,-606.62 851.05,-598.52" style=""/>
+<polygon fill="black" stroke="black" points="854.38,-597.44 847.9,-589.06 847.74,-599.65 854.38,-597.44" style=""/>
+</g>
+<!-- 33 -->
+<g id="node34" class="node" pointer-events="visible" data-name="33">
+
+<path fill="#e58139" stroke="black" d="M984.33,-578.9C984.33,-578.9 912.22,-578.9 912.22,-578.9 906.22,-578.9 900.22,-572.9 900.22,-566.9 900.22,-566.9 900.22,-515.5 900.22,-515.5 900.22,-509.5 906.22,-503.5 912.22,-503.5 912.22,-503.5 984.33,-503.5 984.33,-503.5 990.33,-503.5 996.33,-509.5 996.33,-515.5 996.33,-515.5 996.33,-566.9 996.33,-566.9 996.33,-572.9 990.33,-578.9 984.33,-578.9" style=""/>
+<text text-anchor="middle" x="948.28" y="-562.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.0</text>
+<text text-anchor="middle" x="948.28" y="-545.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 2</text>
+<text text-anchor="middle" x="948.28" y="-528.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [2, 0]</text>
+<text text-anchor="middle" x="948.28" y="-511.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 0</text>
+</g>
+<!-- 25&#45;&gt;33 -->
+<g id="edge33" class="edge" data-name="25-&gt;33">
+
+<path fill="none" stroke="black" d="M900.99,-622.71C907.4,-611.81 914.24,-600.15 920.69,-589.18" style=""/>
+<polygon fill="black" stroke="black" points="923.65,-591.04 925.7,-580.65 917.61,-587.5 923.65,-591.04" style=""/>
+</g>
+<!-- 27 -->
+<g id="node28" class="node" pointer-events="visible" data-name="27">
+
+<path fill="#e58139" stroke="black" d="M811.33,-450.9C811.33,-450.9 739.22,-450.9 739.22,-450.9 733.22,-450.9 727.22,-444.9 727.22,-438.9 727.22,-438.9 727.22,-387.5 727.22,-387.5 727.22,-381.5 733.22,-375.5 739.22,-375.5 739.22,-375.5 811.33,-375.5 811.33,-375.5 817.33,-375.5 823.33,-381.5 823.33,-387.5 823.33,-387.5 823.33,-438.9 823.33,-438.9 823.33,-444.9 817.33,-450.9 811.33,-450.9" style=""/>
+<text text-anchor="middle" x="775.28" y="-434.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.0</text>
+<text text-anchor="middle" x="775.28" y="-417.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 2</text>
+<text text-anchor="middle" x="775.28" y="-400.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [2, 0]</text>
+<text text-anchor="middle" x="775.28" y="-383.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 0</text>
+</g>
+<!-- 26&#45;&gt;27 -->
+<g id="edge27" class="edge" data-name="26-&gt;27">
+
+<path fill="none" stroke="black" d="M811.7,-494.71C806.82,-483.92 801.6,-472.39 796.68,-461.52" style=""/>
+<polygon fill="black" stroke="black" points="800.01,-460.39 792.7,-452.72 793.64,-463.28 800.01,-460.39" style=""/>
+</g>
+<!-- 28 -->
+<g id="node29" class="node" pointer-events="visible" data-name="28">
+
+<path fill="#52a9e8" stroke="black" d="M926.33,-459.2C926.33,-459.2 854.22,-459.2 854.22,-459.2 848.22,-459.2 842.22,-453.2 842.22,-447.2 842.22,-447.2 842.22,-379.2 842.22,-379.2 842.22,-373.2 848.22,-367.2 854.22,-367.2 854.22,-367.2 926.33,-367.2 926.33,-367.2 932.33,-367.2 938.33,-373.2 938.33,-379.2 938.33,-379.2 938.33,-447.2 938.33,-447.2 938.33,-453.2 932.33,-459.2 926.33,-459.2" style=""/>
+<text text-anchor="middle" x="890.28" y="-442.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">BMI &lt;= 26.5</text>
+<text text-anchor="middle" x="890.28" y="-425.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.198</text>
+<text text-anchor="middle" x="890.28" y="-409" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 9</text>
+<text text-anchor="middle" x="890.28" y="-392.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [1, 8]</text>
+<text text-anchor="middle" x="890.28" y="-375.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 26&#45;&gt;28 -->
+<g id="edge28" class="edge" data-name="26-&gt;28">
+
+<path fill="none" stroke="black" d="M853.22,-494.71C856.91,-486.68 860.8,-478.24 864.61,-469.97" style=""/>
+<polygon fill="black" stroke="black" points="867.73,-471.54 868.74,-461 861.38,-468.62 867.73,-471.54" style=""/>
+</g>
+<!-- 29 -->
+<g id="node30" class="node" pointer-events="visible" data-name="29">
+
+<path fill="#ffffff" stroke="black" d="M869.33,-331.2C869.33,-331.2 797.22,-331.2 797.22,-331.2 791.22,-331.2 785.22,-325.2 785.22,-319.2 785.22,-319.2 785.22,-251.2 785.22,-251.2 785.22,-245.2 791.22,-239.2 797.22,-239.2 797.22,-239.2 869.33,-239.2 869.33,-239.2 875.33,-239.2 881.33,-245.2 881.33,-251.2 881.33,-251.2 881.33,-319.2 881.33,-319.2 881.33,-325.2 875.33,-331.2 869.33,-331.2" style=""/>
+<text text-anchor="middle" x="833.28" y="-314.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">TG &lt;= 2.65</text>
+<text text-anchor="middle" x="833.28" y="-297.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.5</text>
+<text text-anchor="middle" x="833.28" y="-281" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 2</text>
+<text text-anchor="middle" x="833.28" y="-264.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [1, 1]</text>
+<text text-anchor="middle" x="833.28" y="-247.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 0</text>
+</g>
+<!-- 28&#45;&gt;29 -->
+<g id="edge29" class="edge" data-name="28-&gt;29">
+
+<path fill="none" stroke="black" d="M869.7,-366.71C866.07,-358.68 862.25,-350.24 858.51,-341.97" style=""/>
+<polygon fill="black" stroke="black" points="861.76,-340.67 854.45,-333 855.38,-343.55 861.76,-340.67" style=""/>
+</g>
+<!-- 32 -->
+<g id="node33" class="node" pointer-events="visible" data-name="32">
+
+<path fill="#399de5" stroke="black" d="M984.33,-322.9C984.33,-322.9 912.22,-322.9 912.22,-322.9 906.22,-322.9 900.22,-316.9 900.22,-310.9 900.22,-310.9 900.22,-259.5 900.22,-259.5 900.22,-253.5 906.22,-247.5 912.22,-247.5 912.22,-247.5 984.33,-247.5 984.33,-247.5 990.33,-247.5 996.33,-253.5 996.33,-259.5 996.33,-259.5 996.33,-310.9 996.33,-310.9 996.33,-316.9 990.33,-322.9 984.33,-322.9" style=""/>
+<text text-anchor="middle" x="948.28" y="-306.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.0</text>
+<text text-anchor="middle" x="948.28" y="-289.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 7</text>
+<text text-anchor="middle" x="948.28" y="-272.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [0, 7]</text>
+<text text-anchor="middle" x="948.28" y="-255.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 28&#45;&gt;32 -->
+<g id="edge32" class="edge" data-name="28-&gt;32">
+
+<path fill="none" stroke="black" d="M911.22,-366.71C916.18,-355.92 921.49,-344.39 926.5,-333.52" style=""/>
+<polygon fill="black" stroke="black" points="929.54,-335.27 930.55,-324.72 923.19,-332.34 929.54,-335.27" style=""/>
+</g>
+<!-- 30 -->
+<g id="node31" class="node" pointer-events="visible" data-name="30">
+
+<path fill="#e58139" stroke="black" d="M812.33,-194.9C812.33,-194.9 740.22,-194.9 740.22,-194.9 734.22,-194.9 728.22,-188.9 728.22,-182.9 728.22,-182.9 728.22,-131.5 728.22,-131.5 728.22,-125.5 734.22,-119.5 740.22,-119.5 740.22,-119.5 812.33,-119.5 812.33,-119.5 818.33,-119.5 824.33,-125.5 824.33,-131.5 824.33,-131.5 824.33,-182.9 824.33,-182.9 824.33,-188.9 818.33,-194.9 812.33,-194.9" style=""/>
+<text text-anchor="middle" x="776.28" y="-178.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.0</text>
+<text text-anchor="middle" x="776.28" y="-161.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 1</text>
+<text text-anchor="middle" x="776.28" y="-144.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [1, 0]</text>
+<text text-anchor="middle" x="776.28" y="-127.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 0</text>
+</g>
+<!-- 29&#45;&gt;30 -->
+<g id="edge30" class="edge" data-name="29-&gt;30">
+
+<path fill="none" stroke="black" d="M812.7,-238.71C807.82,-227.92 802.6,-216.39 797.68,-205.52" style=""/>
+<polygon fill="black" stroke="black" points="801.01,-204.39 793.7,-196.72 794.64,-207.28 801.01,-204.39" style=""/>
+</g>
+<!-- 31 -->
+<g id="node32" class="node" pointer-events="visible" data-name="31">
+
+<path fill="#399de5" stroke="black" d="M927.33,-194.9C927.33,-194.9 855.22,-194.9 855.22,-194.9 849.22,-194.9 843.22,-188.9 843.22,-182.9 843.22,-182.9 843.22,-131.5 843.22,-131.5 843.22,-125.5 849.22,-119.5 855.22,-119.5 855.22,-119.5 927.33,-119.5 927.33,-119.5 933.33,-119.5 939.33,-125.5 939.33,-131.5 939.33,-131.5 939.33,-182.9 939.33,-182.9 939.33,-188.9 933.33,-194.9 927.33,-194.9" style=""/>
+<text text-anchor="middle" x="891.28" y="-178.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.0</text>
+<text text-anchor="middle" x="891.28" y="-161.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 1</text>
+<text text-anchor="middle" x="891.28" y="-144.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [0, 1]</text>
+<text text-anchor="middle" x="891.28" y="-127.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 29&#45;&gt;31 -->
+<g id="edge31" class="edge" data-name="29-&gt;31">
+
+<path fill="none" stroke="black" d="M854.22,-238.71C859.18,-227.92 864.49,-216.39 869.5,-205.52" style=""/>
+<polygon fill="black" stroke="black" points="872.54,-207.27 873.55,-196.72 866.19,-204.34 872.54,-207.27" style=""/>
+</g>
+<!-- 36 -->
+<g id="node37" class="node" pointer-events="visible" data-name="36">
+
+<path fill="#399de5" stroke="black" d="M914.33,-962.9C914.33,-962.9 842.22,-962.9 842.22,-962.9 836.22,-962.9 830.22,-956.9 830.22,-950.9 830.22,-950.9 830.22,-899.5 830.22,-899.5 830.22,-893.5 836.22,-887.5 842.22,-887.5 842.22,-887.5 914.33,-887.5 914.33,-887.5 920.33,-887.5 926.33,-893.5 926.33,-899.5 926.33,-899.5 926.33,-950.9 926.33,-950.9 926.33,-956.9 920.33,-962.9 914.33,-962.9" style=""/>
+<text text-anchor="middle" x="878.28" y="-946.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.0</text>
+<text text-anchor="middle" x="878.28" y="-929.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 1</text>
+<text text-anchor="middle" x="878.28" y="-912.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [0, 1]</text>
+<text text-anchor="middle" x="878.28" y="-895.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 35&#45;&gt;36 -->
+<g id="edge36" class="edge" data-name="35-&gt;36">
+
+<path fill="none" stroke="black" d="M878.28,-1006.71C878.28,-996.25 878.28,-985.1 878.28,-974.53" style=""/>
+<polygon fill="black" stroke="black" points="881.78,-974.86 878.28,-964.86 874.78,-974.86 881.78,-974.86" style=""/>
+</g>
+<!-- 37 -->
+<g id="node38" class="node" pointer-events="visible" data-name="37">
+
+<path fill="#e58139" stroke="black" d="M1029.33,-962.9C1029.33,-962.9 957.22,-962.9 957.22,-962.9 951.22,-962.9 945.22,-956.9 945.22,-950.9 945.22,-950.9 945.22,-899.5 945.22,-899.5 945.22,-893.5 951.22,-887.5 957.22,-887.5 957.22,-887.5 1029.33,-887.5 1029.33,-887.5 1035.33,-887.5 1041.33,-893.5 1041.33,-899.5 1041.33,-899.5 1041.33,-950.9 1041.33,-950.9 1041.33,-956.9 1035.33,-962.9 1029.33,-962.9" style=""/>
+<text text-anchor="middle" x="993.28" y="-946.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.0</text>
+<text text-anchor="middle" x="993.28" y="-929.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 6</text>
+<text text-anchor="middle" x="993.28" y="-912.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [6, 0]</text>
+<text text-anchor="middle" x="993.28" y="-895.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 0</text>
+</g>
+<!-- 35&#45;&gt;37 -->
+<g id="edge37" class="edge" data-name="35-&gt;37">
+
+<path fill="none" stroke="black" d="M919.79,-1006.71C930.15,-995.36 941.26,-983.19 951.62,-971.84" style=""/>
+<polygon fill="black" stroke="black" points="954.2,-974.21 958.36,-964.46 949.03,-969.49 954.2,-974.21" style=""/>
+</g>
+<!-- 39 -->
+<g id="node40" class="node" pointer-events="visible" data-name="39">
+
+<path fill="#f4fafe" stroke="black" d="M1353.4,-1227.2C1353.4,-1227.2 1265.15,-1227.2 1265.15,-1227.2 1259.15,-1227.2 1253.15,-1221.2 1253.15,-1215.2 1253.15,-1215.2 1253.15,-1147.2 1253.15,-1147.2 1253.15,-1141.2 1259.15,-1135.2 1265.15,-1135.2 1265.15,-1135.2 1353.4,-1135.2 1353.4,-1135.2 1359.4,-1135.2 1365.4,-1141.2 1365.4,-1147.2 1365.4,-1147.2 1365.4,-1215.2 1365.4,-1215.2 1365.4,-1221.2 1359.4,-1227.2 1353.4,-1227.2" style=""/>
+<text text-anchor="middle" x="1309.28" y="-1210.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">VLDL &lt;= 0.65</text>
+<text text-anchor="middle" x="1309.28" y="-1193.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.5</text>
+<text text-anchor="middle" x="1309.28" y="-1177" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 35</text>
+<text text-anchor="middle" x="1309.28" y="-1160.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [17, 18]</text>
+<text text-anchor="middle" x="1309.28" y="-1143.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 38&#45;&gt;39 -->
+<g id="edge39" class="edge" data-name="38-&gt;39">
+
+<path fill="none" stroke="black" d="M1309.28,-1262.71C1309.28,-1255.04 1309.28,-1246.99 1309.28,-1239.07" style=""/>
+<polygon fill="black" stroke="black" points="1312.78,-1239.14 1309.28,-1229.14 1305.78,-1239.14 1312.78,-1239.14" style=""/>
+</g>
+<!-- 60 -->
+<g id="node61" class="node" pointer-events="visible" data-name="60">
+
+<path fill="#6db7ec" stroke="black" d="M1540.4,-1227.2C1540.4,-1227.2 1452.15,-1227.2 1452.15,-1227.2 1446.15,-1227.2 1440.15,-1221.2 1440.15,-1215.2 1440.15,-1215.2 1440.15,-1147.2 1440.15,-1147.2 1440.15,-1141.2 1446.15,-1135.2 1452.15,-1135.2 1452.15,-1135.2 1540.4,-1135.2 1540.4,-1135.2 1546.4,-1135.2 1552.4,-1141.2 1552.4,-1147.2 1552.4,-1147.2 1552.4,-1215.2 1552.4,-1215.2 1552.4,-1221.2 1546.4,-1227.2 1540.4,-1227.2" style=""/>
+<text text-anchor="middle" x="1496.28" y="-1210.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">HDL &lt;= 0.5</text>
+<text text-anchor="middle" x="1496.28" y="-1193.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.329</text>
+<text text-anchor="middle" x="1496.28" y="-1177" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 82</text>
+<text text-anchor="middle" x="1496.28" y="-1160.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [17, 65]</text>
+<text text-anchor="middle" x="1496.28" y="-1143.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 38&#45;&gt;60 -->
+<g id="edge60" class="edge" data-name="38-&gt;60">
+
+<path fill="none" stroke="black" d="M1365.89,-1270.05C1386.21,-1256.36 1409.3,-1240.8 1430.35,-1226.62" style=""/>
+<polygon fill="black" stroke="black" points="1432.26,-1229.55 1438.6,-1221.06 1428.35,-1223.75 1432.26,-1229.55" style=""/>
+</g>
+<!-- 40 -->
+<g id="node41" class="node" pointer-events="visible" data-name="40">
+
+<path fill="#e9965a" stroke="black" d="M1255.72,-1099.2C1255.72,-1099.2 1182.83,-1099.2 1182.83,-1099.2 1176.83,-1099.2 1170.83,-1093.2 1170.83,-1087.2 1170.83,-1087.2 1170.83,-1019.2 1170.83,-1019.2 1170.83,-1013.2 1176.83,-1007.2 1182.83,-1007.2 1182.83,-1007.2 1255.72,-1007.2 1255.72,-1007.2 1261.72,-1007.2 1267.72,-1013.2 1267.72,-1019.2 1267.72,-1019.2 1267.72,-1087.2 1267.72,-1087.2 1267.72,-1093.2 1261.72,-1099.2 1255.72,-1099.2" style=""/>
+<text text-anchor="middle" x="1219.28" y="-1082.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">AGE &lt;= 29.5</text>
+<text text-anchor="middle" x="1219.28" y="-1065.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.245</text>
+<text text-anchor="middle" x="1219.28" y="-1049" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 7</text>
+<text text-anchor="middle" x="1219.28" y="-1032.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [6, 1]</text>
+<text text-anchor="middle" x="1219.28" y="-1015.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 0</text>
+</g>
+<!-- 39&#45;&gt;40 -->
+<g id="edge40" class="edge" data-name="39-&gt;40">
+
+<path fill="none" stroke="black" d="M1276.79,-1134.71C1270.8,-1126.32 1264.48,-1117.49 1258.32,-1108.87" style=""/>
+<polygon fill="black" stroke="black" points="1261.26,-1106.96 1252.6,-1100.85 1255.57,-1111.03 1261.26,-1106.96" style=""/>
+</g>
+<!-- 43 -->
+<g id="node44" class="node" pointer-events="visible" data-name="43">
+
+<path fill="#b9dcf6" stroke="black" d="M1386.4,-1099.2C1386.4,-1099.2 1298.15,-1099.2 1298.15,-1099.2 1292.15,-1099.2 1286.15,-1093.2 1286.15,-1087.2 1286.15,-1087.2 1286.15,-1019.2 1286.15,-1019.2 1286.15,-1013.2 1292.15,-1007.2 1298.15,-1007.2 1298.15,-1007.2 1386.4,-1007.2 1386.4,-1007.2 1392.4,-1007.2 1398.4,-1013.2 1398.4,-1019.2 1398.4,-1019.2 1398.4,-1087.2 1398.4,-1087.2 1398.4,-1093.2 1392.4,-1099.2 1386.4,-1099.2" style=""/>
+<text text-anchor="middle" x="1342.28" y="-1082.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">HbA1c &lt;= 2.3</text>
+<text text-anchor="middle" x="1342.28" y="-1065.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.477</text>
+<text text-anchor="middle" x="1342.28" y="-1049" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 28</text>
+<text text-anchor="middle" x="1342.28" y="-1032.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [11, 17]</text>
+<text text-anchor="middle" x="1342.28" y="-1015.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 39&#45;&gt;43 -->
+<g id="edge43" class="edge" data-name="39-&gt;43">
+
+<path fill="none" stroke="black" d="M1321.19,-1134.71C1323.25,-1126.86 1325.41,-1118.62 1327.53,-1110.52" style=""/>
+<polygon fill="black" stroke="black" points="1330.85,-1111.65 1330,-1101.09 1324.08,-1109.87 1330.85,-1111.65" style=""/>
+</g>
+<!-- 41 -->
+<g id="node42" class="node" pointer-events="visible" data-name="41">
+
+<path fill="#399de5" stroke="black" d="M1144.33,-962.9C1144.33,-962.9 1072.22,-962.9 1072.22,-962.9 1066.22,-962.9 1060.22,-956.9 1060.22,-950.9 1060.22,-950.9 1060.22,-899.5 1060.22,-899.5 1060.22,-893.5 1066.22,-887.5 1072.22,-887.5 1072.22,-887.5 1144.33,-887.5 1144.33,-887.5 1150.33,-887.5 1156.33,-893.5 1156.33,-899.5 1156.33,-899.5 1156.33,-950.9 1156.33,-950.9 1156.33,-956.9 1150.33,-962.9 1144.33,-962.9" style=""/>
+<text text-anchor="middle" x="1108.28" y="-946.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.0</text>
+<text text-anchor="middle" x="1108.28" y="-929.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 1</text>
+<text text-anchor="middle" x="1108.28" y="-912.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [0, 1]</text>
+<text text-anchor="middle" x="1108.28" y="-895.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 40&#45;&gt;41 -->
+<g id="edge41" class="edge" data-name="40-&gt;41">
+
+<path fill="none" stroke="black" d="M1179.2,-1006.71C1169.21,-995.36 1158.49,-983.19 1148.48,-971.84" style=""/>
+<polygon fill="black" stroke="black" points="1151.24,-969.67 1142,-964.48 1145.98,-974.3 1151.24,-969.67" style=""/>
+</g>
+<!-- 42 -->
+<g id="node43" class="node" pointer-events="visible" data-name="42">
+
+<path fill="#e58139" stroke="black" d="M1259.33,-962.9C1259.33,-962.9 1187.22,-962.9 1187.22,-962.9 1181.22,-962.9 1175.22,-956.9 1175.22,-950.9 1175.22,-950.9 1175.22,-899.5 1175.22,-899.5 1175.22,-893.5 1181.22,-887.5 1187.22,-887.5 1187.22,-887.5 1259.33,-887.5 1259.33,-887.5 1265.33,-887.5 1271.33,-893.5 1271.33,-899.5 1271.33,-899.5 1271.33,-950.9 1271.33,-950.9 1271.33,-956.9 1265.33,-962.9 1259.33,-962.9" style=""/>
+<text text-anchor="middle" x="1223.28" y="-946.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.0</text>
+<text text-anchor="middle" x="1223.28" y="-929.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 6</text>
+<text text-anchor="middle" x="1223.28" y="-912.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [6, 0]</text>
+<text text-anchor="middle" x="1223.28" y="-895.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 0</text>
+</g>
+<!-- 40&#45;&gt;42 -->
+<g id="edge42" class="edge" data-name="40-&gt;42">
+
+<path fill="none" stroke="black" d="M1220.72,-1006.71C1221.05,-996.25 1221.41,-985.1 1221.74,-974.53" style=""/>
+<polygon fill="black" stroke="black" points="1225.23,-974.96 1222.05,-964.86 1218.23,-974.74 1225.23,-974.96" style=""/>
+</g>
+<!-- 44 -->
+<g id="node45" class="node" pointer-events="visible" data-name="44">
+
+<path fill="#e58139" stroke="black" d="M1374.33,-962.9C1374.33,-962.9 1302.22,-962.9 1302.22,-962.9 1296.22,-962.9 1290.22,-956.9 1290.22,-950.9 1290.22,-950.9 1290.22,-899.5 1290.22,-899.5 1290.22,-893.5 1296.22,-887.5 1302.22,-887.5 1302.22,-887.5 1374.33,-887.5 1374.33,-887.5 1380.33,-887.5 1386.33,-893.5 1386.33,-899.5 1386.33,-899.5 1386.33,-950.9 1386.33,-950.9 1386.33,-956.9 1380.33,-962.9 1374.33,-962.9" style=""/>
+<text text-anchor="middle" x="1338.28" y="-946.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.0</text>
+<text text-anchor="middle" x="1338.28" y="-929.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 2</text>
+<text text-anchor="middle" x="1338.28" y="-912.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [2, 0]</text>
+<text text-anchor="middle" x="1338.28" y="-895.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 0</text>
+</g>
+<!-- 43&#45;&gt;44 -->
+<g id="edge44" class="edge" data-name="43-&gt;44">
+
+<path fill="none" stroke="black" d="M1340.83,-1006.71C1340.5,-996.25 1340.15,-985.1 1339.81,-974.53" style=""/>
+<polygon fill="black" stroke="black" points="1343.32,-974.74 1339.5,-964.86 1336.32,-974.96 1343.32,-974.74" style=""/>
+</g>
+<!-- 45 -->
+<g id="node46" class="node" pointer-events="visible" data-name="45">
+
+<path fill="#a2d1f3" stroke="black" d="M1496.62,-971.2C1496.62,-971.2 1415.94,-971.2 1415.94,-971.2 1409.94,-971.2 1403.94,-965.2 1403.94,-959.2 1403.94,-959.2 1403.94,-891.2 1403.94,-891.2 1403.94,-885.2 1409.94,-879.2 1415.94,-879.2 1415.94,-879.2 1496.62,-879.2 1496.62,-879.2 1502.62,-879.2 1508.62,-885.2 1508.62,-891.2 1508.62,-891.2 1508.62,-959.2 1508.62,-959.2 1508.62,-965.2 1502.62,-971.2 1496.62,-971.2" style=""/>
+<text text-anchor="middle" x="1456.28" y="-954.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">HDL &lt;= 1.2</text>
+<text text-anchor="middle" x="1456.28" y="-937.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.453</text>
+<text text-anchor="middle" x="1456.28" y="-921" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 26</text>
+<text text-anchor="middle" x="1456.28" y="-904.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [9, 17]</text>
+<text text-anchor="middle" x="1456.28" y="-887.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 43&#45;&gt;45 -->
+<g id="edge45" class="edge" data-name="43-&gt;45">
+
+<path fill="none" stroke="black" d="M1383.43,-1006.71C1391.26,-998.06 1399.53,-988.92 1407.56,-980.04" style=""/>
+<polygon fill="black" stroke="black" points="1410.05,-982.51 1414.17,-972.74 1404.86,-977.81 1410.05,-982.51" style=""/>
+</g>
+<!-- 46 -->
+<g id="node47" class="node" pointer-events="visible" data-name="46">
+
+<path fill="#5aade9" stroke="black" d="M1342.62,-843.2C1342.62,-843.2 1261.94,-843.2 1261.94,-843.2 1255.94,-843.2 1249.94,-837.2 1249.94,-831.2 1249.94,-831.2 1249.94,-763.2 1249.94,-763.2 1249.94,-757.2 1255.94,-751.2 1261.94,-751.2 1261.94,-751.2 1342.62,-751.2 1342.62,-751.2 1348.62,-751.2 1354.62,-757.2 1354.62,-763.2 1354.62,-763.2 1354.62,-831.2 1354.62,-831.2 1354.62,-837.2 1348.62,-843.2 1342.62,-843.2" style=""/>
+<text text-anchor="middle" x="1302.28" y="-826.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">Chol &lt;= 6.4</text>
+<text text-anchor="middle" x="1302.28" y="-809.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.245</text>
+<text text-anchor="middle" x="1302.28" y="-793" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 14</text>
+<text text-anchor="middle" x="1302.28" y="-776.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [2, 12]</text>
+<text text-anchor="middle" x="1302.28" y="-759.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 45&#45;&gt;46 -->
+<g id="edge46" class="edge" data-name="45-&gt;46">
+
+<path fill="none" stroke="black" d="M1403.71,-881.19C1390.77,-870.61 1376.81,-859.18 1363.5,-848.29" style=""/>
+<polygon fill="black" stroke="black" points="1366,-845.81 1356.04,-842.19 1361.56,-851.23 1366,-845.81" style=""/>
+</g>
+<!-- 53 -->
+<g id="node54" class="node" pointer-events="visible" data-name="53">
+
+<path fill="#f8dbc6" stroke="black" d="M1493.94,-843.2C1493.94,-843.2 1418.62,-843.2 1418.62,-843.2 1412.62,-843.2 1406.62,-837.2 1406.62,-831.2 1406.62,-831.2 1406.62,-763.2 1406.62,-763.2 1406.62,-757.2 1412.62,-751.2 1418.62,-751.2 1418.62,-751.2 1493.94,-751.2 1493.94,-751.2 1499.94,-751.2 1505.94,-757.2 1505.94,-763.2 1505.94,-763.2 1505.94,-831.2 1505.94,-831.2 1505.94,-837.2 1499.94,-843.2 1493.94,-843.2" style=""/>
+<text text-anchor="middle" x="1456.28" y="-826.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">BMI &lt;= 22.5</text>
+<text text-anchor="middle" x="1456.28" y="-809.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.486</text>
+<text text-anchor="middle" x="1456.28" y="-793" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 12</text>
+<text text-anchor="middle" x="1456.28" y="-776.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [7, 5]</text>
+<text text-anchor="middle" x="1456.28" y="-759.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 0</text>
+</g>
+<!-- 45&#45;&gt;53 -->
+<g id="edge53" class="edge" data-name="45-&gt;53">
+
+<path fill="none" stroke="black" d="M1456.28,-878.71C1456.28,-871.04 1456.28,-862.99 1456.28,-855.07" style=""/>
+<polygon fill="black" stroke="black" points="1459.78,-855.14 1456.28,-845.14 1452.78,-855.14 1459.78,-855.14" style=""/>
+</g>
+<!-- 47 -->
+<g id="node48" class="node" pointer-events="visible" data-name="47">
+
+<path fill="#49a5e7" stroke="black" d="M1224.62,-715.2C1224.62,-715.2 1143.94,-715.2 1143.94,-715.2 1137.94,-715.2 1131.94,-709.2 1131.94,-703.2 1131.94,-703.2 1131.94,-635.2 1131.94,-635.2 1131.94,-629.2 1137.94,-623.2 1143.94,-623.2 1143.94,-623.2 1224.62,-623.2 1224.62,-623.2 1230.62,-623.2 1236.62,-629.2 1236.62,-635.2 1236.62,-635.2 1236.62,-703.2 1236.62,-703.2 1236.62,-709.2 1230.62,-715.2 1224.62,-715.2" style=""/>
+<text text-anchor="middle" x="1184.28" y="-698.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">LDL &lt;= 1.35</text>
+<text text-anchor="middle" x="1184.28" y="-681.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.142</text>
+<text text-anchor="middle" x="1184.28" y="-665" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 13</text>
+<text text-anchor="middle" x="1184.28" y="-648.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [1, 12]</text>
+<text text-anchor="middle" x="1184.28" y="-631.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 46&#45;&gt;47 -->
+<g id="edge47" class="edge" data-name="46-&gt;47">
+
+<path fill="none" stroke="black" d="M1259.68,-750.71C1251.49,-741.97 1242.84,-732.74 1234.44,-723.77" style=""/>
+<polygon fill="black" stroke="black" points="1237.24,-721.63 1227.85,-716.73 1232.13,-726.42 1237.24,-721.63" style=""/>
+</g>
+<!-- 52 -->
+<g id="node53" class="node" pointer-events="visible" data-name="52">
+
+<path fill="#e58139" stroke="black" d="M1338.33,-706.9C1338.33,-706.9 1266.22,-706.9 1266.22,-706.9 1260.22,-706.9 1254.22,-700.9 1254.22,-694.9 1254.22,-694.9 1254.22,-643.5 1254.22,-643.5 1254.22,-637.5 1260.22,-631.5 1266.22,-631.5 1266.22,-631.5 1338.33,-631.5 1338.33,-631.5 1344.33,-631.5 1350.33,-637.5 1350.33,-643.5 1350.33,-643.5 1350.33,-694.9 1350.33,-694.9 1350.33,-700.9 1344.33,-706.9 1338.33,-706.9" style=""/>
+<text text-anchor="middle" x="1302.28" y="-690.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.0</text>
+<text text-anchor="middle" x="1302.28" y="-673.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 1</text>
+<text text-anchor="middle" x="1302.28" y="-656.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [1, 0]</text>
+<text text-anchor="middle" x="1302.28" y="-639.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 0</text>
+</g>
+<!-- 46&#45;&gt;52 -->
+<g id="edge52" class="edge" data-name="46-&gt;52">
+
+<path fill="none" stroke="black" d="M1302.28,-750.71C1302.28,-740.25 1302.28,-729.1 1302.28,-718.53" style=""/>
+<polygon fill="black" stroke="black" points="1305.78,-718.86 1302.28,-708.86 1298.78,-718.86 1305.78,-718.86" style=""/>
+</g>
+<!-- 48 -->
+<g id="node49" class="node" pointer-events="visible" data-name="48">
+
+<path fill="#ffffff" stroke="black" d="M1104,-587.2C1104,-587.2 1030.55,-587.2 1030.55,-587.2 1024.55,-587.2 1018.55,-581.2 1018.55,-575.2 1018.55,-575.2 1018.55,-507.2 1018.55,-507.2 1018.55,-501.2 1024.55,-495.2 1030.55,-495.2 1030.55,-495.2 1104,-495.2 1104,-495.2 1110,-495.2 1116,-501.2 1116,-507.2 1116,-507.2 1116,-575.2 1116,-575.2 1116,-581.2 1110,-587.2 1104,-587.2" style=""/>
+<text text-anchor="middle" x="1067.28" y="-570.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">Urea &lt;= 12.8</text>
+<text text-anchor="middle" x="1067.28" y="-553.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.5</text>
+<text text-anchor="middle" x="1067.28" y="-537" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 2</text>
+<text text-anchor="middle" x="1067.28" y="-520.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [1, 1]</text>
+<text text-anchor="middle" x="1067.28" y="-503.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 0</text>
+</g>
+<!-- 47&#45;&gt;48 -->
+<g id="edge48" class="edge" data-name="47-&gt;48">
+
+<path fill="none" stroke="black" d="M1142.04,-622.71C1134,-614.06 1125.52,-604.92 1117.27,-596.04" style=""/>
+<polygon fill="black" stroke="black" points="1119.85,-593.68 1110.48,-588.73 1114.72,-598.44 1119.85,-593.68" style=""/>
+</g>
+<!-- 51 -->
+<g id="node52" class="node" pointer-events="visible" data-name="51">
+
+<path fill="#399de5" stroke="black" d="M1226.62,-578.9C1226.62,-578.9 1145.94,-578.9 1145.94,-578.9 1139.94,-578.9 1133.94,-572.9 1133.94,-566.9 1133.94,-566.9 1133.94,-515.5 1133.94,-515.5 1133.94,-509.5 1139.94,-503.5 1145.94,-503.5 1145.94,-503.5 1226.62,-503.5 1226.62,-503.5 1232.62,-503.5 1238.62,-509.5 1238.62,-515.5 1238.62,-515.5 1238.62,-566.9 1238.62,-566.9 1238.62,-572.9 1232.62,-578.9 1226.62,-578.9" style=""/>
+<text text-anchor="middle" x="1186.28" y="-562.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.0</text>
+<text text-anchor="middle" x="1186.28" y="-545.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 11</text>
+<text text-anchor="middle" x="1186.28" y="-528.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [0, 11]</text>
+<text text-anchor="middle" x="1186.28" y="-511.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 47&#45;&gt;51 -->
+<g id="edge51" class="edge" data-name="47-&gt;51">
+
+<path fill="none" stroke="black" d="M1185,-622.71C1185.17,-612.25 1185.34,-601.1 1185.51,-590.53" style=""/>
+<polygon fill="black" stroke="black" points="1189,-590.91 1185.66,-580.86 1182.01,-590.8 1189,-590.91" style=""/>
+</g>
+<!-- 49 -->
+<g id="node50" class="node" pointer-events="visible" data-name="49">
+
+<path fill="#e58139" stroke="black" d="M1070.33,-450.9C1070.33,-450.9 998.22,-450.9 998.22,-450.9 992.22,-450.9 986.22,-444.9 986.22,-438.9 986.22,-438.9 986.22,-387.5 986.22,-387.5 986.22,-381.5 992.22,-375.5 998.22,-375.5 998.22,-375.5 1070.33,-375.5 1070.33,-375.5 1076.33,-375.5 1082.33,-381.5 1082.33,-387.5 1082.33,-387.5 1082.33,-438.9 1082.33,-438.9 1082.33,-444.9 1076.33,-450.9 1070.33,-450.9" style=""/>
+<text text-anchor="middle" x="1034.28" y="-434.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.0</text>
+<text text-anchor="middle" x="1034.28" y="-417.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 1</text>
+<text text-anchor="middle" x="1034.28" y="-400.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [1, 0]</text>
+<text text-anchor="middle" x="1034.28" y="-383.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 0</text>
+</g>
+<!-- 48&#45;&gt;49 -->
+<g id="edge49" class="edge" data-name="48-&gt;49">
+
+<path fill="none" stroke="black" d="M1055.36,-494.71C1052.6,-484.14 1049.64,-472.86 1046.85,-462.19" style=""/>
+<polygon fill="black" stroke="black" points="1050.31,-461.6 1044.39,-452.81 1043.54,-463.37 1050.31,-461.6" style=""/>
+</g>
+<!-- 50 -->
+<g id="node51" class="node" pointer-events="visible" data-name="50">
+
+<path fill="#399de5" stroke="black" d="M1185.33,-450.9C1185.33,-450.9 1113.22,-450.9 1113.22,-450.9 1107.22,-450.9 1101.22,-444.9 1101.22,-438.9 1101.22,-438.9 1101.22,-387.5 1101.22,-387.5 1101.22,-381.5 1107.22,-375.5 1113.22,-375.5 1113.22,-375.5 1185.33,-375.5 1185.33,-375.5 1191.33,-375.5 1197.33,-381.5 1197.33,-387.5 1197.33,-387.5 1197.33,-438.9 1197.33,-438.9 1197.33,-444.9 1191.33,-450.9 1185.33,-450.9" style=""/>
+<text text-anchor="middle" x="1149.28" y="-434.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.0</text>
+<text text-anchor="middle" x="1149.28" y="-417.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 1</text>
+<text text-anchor="middle" x="1149.28" y="-400.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [0, 1]</text>
+<text text-anchor="middle" x="1149.28" y="-383.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 48&#45;&gt;50 -->
+<g id="edge50" class="edge" data-name="48-&gt;50">
+
+<path fill="none" stroke="black" d="M1096.88,-494.71C1104.05,-483.7 1111.72,-471.91 1118.92,-460.84" style=""/>
+<polygon fill="black" stroke="black" points="1121.76,-462.9 1124.28,-452.61 1115.89,-459.08 1121.76,-462.9" style=""/>
+</g>
+<!-- 54 -->
+<g id="node55" class="node" pointer-events="visible" data-name="54">
+
+<path fill="#b0d8f5" stroke="black" d="M1453.33,-715.2C1453.33,-715.2 1381.22,-715.2 1381.22,-715.2 1375.22,-715.2 1369.22,-709.2 1369.22,-703.2 1369.22,-703.2 1369.22,-635.2 1369.22,-635.2 1369.22,-629.2 1375.22,-623.2 1381.22,-623.2 1381.22,-623.2 1453.33,-623.2 1453.33,-623.2 1459.33,-623.2 1465.33,-629.2 1465.33,-635.2 1465.33,-635.2 1465.33,-703.2 1465.33,-703.2 1465.33,-709.2 1459.33,-715.2 1453.33,-715.2" style=""/>
+<text text-anchor="middle" x="1417.28" y="-698.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">Chol &lt;= 4.05</text>
+<text text-anchor="middle" x="1417.28" y="-681.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.469</text>
+<text text-anchor="middle" x="1417.28" y="-665" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 8</text>
+<text text-anchor="middle" x="1417.28" y="-648.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [3, 5]</text>
+<text text-anchor="middle" x="1417.28" y="-631.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 53&#45;&gt;54 -->
+<g id="edge54" class="edge" data-name="53-&gt;54">
+
+<path fill="none" stroke="black" d="M1442.2,-750.71C1439.77,-742.86 1437.22,-734.62 1434.71,-726.52" style=""/>
+<polygon fill="black" stroke="black" points="1438.08,-725.59 1431.78,-717.07 1431.4,-727.66 1438.08,-725.59" style=""/>
+</g>
+<!-- 59 -->
+<g id="node60" class="node" pointer-events="visible" data-name="59">
+
+<path fill="#e58139" stroke="black" d="M1568.33,-706.9C1568.33,-706.9 1496.22,-706.9 1496.22,-706.9 1490.22,-706.9 1484.22,-700.9 1484.22,-694.9 1484.22,-694.9 1484.22,-643.5 1484.22,-643.5 1484.22,-637.5 1490.22,-631.5 1496.22,-631.5 1496.22,-631.5 1568.33,-631.5 1568.33,-631.5 1574.33,-631.5 1580.33,-637.5 1580.33,-643.5 1580.33,-643.5 1580.33,-694.9 1580.33,-694.9 1580.33,-700.9 1574.33,-706.9 1568.33,-706.9" style=""/>
+<text text-anchor="middle" x="1532.28" y="-690.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.0</text>
+<text text-anchor="middle" x="1532.28" y="-673.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 4</text>
+<text text-anchor="middle" x="1532.28" y="-656.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [4, 0]</text>
+<text text-anchor="middle" x="1532.28" y="-639.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 0</text>
+</g>
+<!-- 53&#45;&gt;59 -->
+<g id="edge59" class="edge" data-name="53-&gt;59">
+
+<path fill="none" stroke="black" d="M1483.72,-750.71C1490.29,-739.81 1497.32,-728.15 1503.94,-717.18" style=""/>
+<polygon fill="black" stroke="black" points="1506.92,-719.01 1509.09,-708.64 1500.93,-715.4 1506.92,-719.01" style=""/>
+</g>
+<!-- 55 -->
+<g id="node56" class="node" pointer-events="visible" data-name="55">
+
+<path fill="#399de5" stroke="black" d="M1342.33,-578.9C1342.33,-578.9 1270.22,-578.9 1270.22,-578.9 1264.22,-578.9 1258.22,-572.9 1258.22,-566.9 1258.22,-566.9 1258.22,-515.5 1258.22,-515.5 1258.22,-509.5 1264.22,-503.5 1270.22,-503.5 1270.22,-503.5 1342.33,-503.5 1342.33,-503.5 1348.33,-503.5 1354.33,-509.5 1354.33,-515.5 1354.33,-515.5 1354.33,-566.9 1354.33,-566.9 1354.33,-572.9 1348.33,-578.9 1342.33,-578.9" style=""/>
+<text text-anchor="middle" x="1306.28" y="-562.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.0</text>
+<text text-anchor="middle" x="1306.28" y="-545.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 4</text>
+<text text-anchor="middle" x="1306.28" y="-528.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [0, 4]</text>
+<text text-anchor="middle" x="1306.28" y="-511.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 54&#45;&gt;55 -->
+<g id="edge55" class="edge" data-name="54-&gt;55">
+
+<path fill="none" stroke="black" d="M1377.2,-622.71C1367.21,-611.36 1356.49,-599.19 1346.48,-587.84" style=""/>
+<polygon fill="black" stroke="black" points="1349.24,-585.67 1340,-580.48 1343.98,-590.3 1349.24,-585.67" style=""/>
+</g>
+<!-- 56 -->
+<g id="node57" class="node" pointer-events="visible" data-name="56">
+
+<path fill="#eeab7b" stroke="black" d="M1457.33,-587.2C1457.33,-587.2 1385.22,-587.2 1385.22,-587.2 1379.22,-587.2 1373.22,-581.2 1373.22,-575.2 1373.22,-575.2 1373.22,-507.2 1373.22,-507.2 1373.22,-501.2 1379.22,-495.2 1385.22,-495.2 1385.22,-495.2 1457.33,-495.2 1457.33,-495.2 1463.33,-495.2 1469.33,-501.2 1469.33,-507.2 1469.33,-507.2 1469.33,-575.2 1469.33,-575.2 1469.33,-581.2 1463.33,-587.2 1457.33,-587.2" style=""/>
+<text text-anchor="middle" x="1421.28" y="-570.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">LDL &lt;= 2.0</text>
+<text text-anchor="middle" x="1421.28" y="-553.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.375</text>
+<text text-anchor="middle" x="1421.28" y="-537" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 4</text>
+<text text-anchor="middle" x="1421.28" y="-520.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [3, 1]</text>
+<text text-anchor="middle" x="1421.28" y="-503.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 0</text>
+</g>
+<!-- 54&#45;&gt;56 -->
+<g id="edge56" class="edge" data-name="54-&gt;56">
+
+<path fill="none" stroke="black" d="M1418.72,-622.71C1418.97,-615.04 1419.22,-606.99 1419.47,-599.07" style=""/>
+<polygon fill="black" stroke="black" points="1422.97,-599.24 1419.79,-589.13 1415.97,-599.02 1422.97,-599.24" style=""/>
+</g>
+<!-- 57 -->
+<g id="node58" class="node" pointer-events="visible" data-name="57">
+
+<path fill="#399de5" stroke="black" d="M1400.33,-450.9C1400.33,-450.9 1328.22,-450.9 1328.22,-450.9 1322.22,-450.9 1316.22,-444.9 1316.22,-438.9 1316.22,-438.9 1316.22,-387.5 1316.22,-387.5 1316.22,-381.5 1322.22,-375.5 1328.22,-375.5 1328.22,-375.5 1400.33,-375.5 1400.33,-375.5 1406.33,-375.5 1412.33,-381.5 1412.33,-387.5 1412.33,-387.5 1412.33,-438.9 1412.33,-438.9 1412.33,-444.9 1406.33,-450.9 1400.33,-450.9" style=""/>
+<text text-anchor="middle" x="1364.28" y="-434.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.0</text>
+<text text-anchor="middle" x="1364.28" y="-417.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 1</text>
+<text text-anchor="middle" x="1364.28" y="-400.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [0, 1]</text>
+<text text-anchor="middle" x="1364.28" y="-383.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 56&#45;&gt;57 -->
+<g id="edge57" class="edge" data-name="56-&gt;57">
+
+<path fill="none" stroke="black" d="M1400.7,-494.71C1395.82,-483.92 1390.6,-472.39 1385.68,-461.52" style=""/>
+<polygon fill="black" stroke="black" points="1389.01,-460.39 1381.7,-452.72 1382.64,-463.28 1389.01,-460.39" style=""/>
+</g>
+<!-- 58 -->
+<g id="node59" class="node" pointer-events="visible" data-name="58">
+
+<path fill="#e58139" stroke="black" d="M1515.33,-450.9C1515.33,-450.9 1443.22,-450.9 1443.22,-450.9 1437.22,-450.9 1431.22,-444.9 1431.22,-438.9 1431.22,-438.9 1431.22,-387.5 1431.22,-387.5 1431.22,-381.5 1437.22,-375.5 1443.22,-375.5 1443.22,-375.5 1515.33,-375.5 1515.33,-375.5 1521.33,-375.5 1527.33,-381.5 1527.33,-387.5 1527.33,-387.5 1527.33,-438.9 1527.33,-438.9 1527.33,-444.9 1521.33,-450.9 1515.33,-450.9" style=""/>
+<text text-anchor="middle" x="1479.28" y="-434.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.0</text>
+<text text-anchor="middle" x="1479.28" y="-417.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 3</text>
+<text text-anchor="middle" x="1479.28" y="-400.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [3, 0]</text>
+<text text-anchor="middle" x="1479.28" y="-383.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 0</text>
+</g>
+<!-- 56&#45;&gt;58 -->
+<g id="edge58" class="edge" data-name="56-&gt;58">
+
+<path fill="none" stroke="black" d="M1442.22,-494.71C1447.18,-483.92 1452.49,-472.39 1457.5,-461.52" style=""/>
+<polygon fill="black" stroke="black" points="1460.54,-463.27 1461.55,-452.72 1454.19,-460.34 1460.54,-463.27" style=""/>
+</g>
+<!-- 61 -->
+<g id="node62" class="node" pointer-events="visible" data-name="61">
+
+<path fill="#e58139" stroke="black" d="M1532.33,-1090.9C1532.33,-1090.9 1460.22,-1090.9 1460.22,-1090.9 1454.22,-1090.9 1448.22,-1084.9 1448.22,-1078.9 1448.22,-1078.9 1448.22,-1027.5 1448.22,-1027.5 1448.22,-1021.5 1454.22,-1015.5 1460.22,-1015.5 1460.22,-1015.5 1532.33,-1015.5 1532.33,-1015.5 1538.33,-1015.5 1544.33,-1021.5 1544.33,-1027.5 1544.33,-1027.5 1544.33,-1078.9 1544.33,-1078.9 1544.33,-1084.9 1538.33,-1090.9 1532.33,-1090.9" style=""/>
+<text text-anchor="middle" x="1496.28" y="-1074.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.0</text>
+<text text-anchor="middle" x="1496.28" y="-1057.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 3</text>
+<text text-anchor="middle" x="1496.28" y="-1040.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [3, 0]</text>
+<text text-anchor="middle" x="1496.28" y="-1023.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 0</text>
+</g>
+<!-- 60&#45;&gt;61 -->
+<g id="edge61" class="edge" data-name="60-&gt;61">
+
+<path fill="none" stroke="black" d="M1496.28,-1134.71C1496.28,-1124.25 1496.28,-1113.1 1496.28,-1102.53" style=""/>
+<polygon fill="black" stroke="black" points="1499.78,-1102.86 1496.28,-1092.86 1492.78,-1102.86 1499.78,-1102.86" style=""/>
+</g>
+<!-- 62 -->
+<g id="node63" class="node" pointer-events="visible" data-name="62">
+
+<path fill="#64b2eb" stroke="black" d="M1694.4,-1099.2C1694.4,-1099.2 1606.15,-1099.2 1606.15,-1099.2 1600.15,-1099.2 1594.15,-1093.2 1594.15,-1087.2 1594.15,-1087.2 1594.15,-1019.2 1594.15,-1019.2 1594.15,-1013.2 1600.15,-1007.2 1606.15,-1007.2 1606.15,-1007.2 1694.4,-1007.2 1694.4,-1007.2 1700.4,-1007.2 1706.4,-1013.2 1706.4,-1019.2 1706.4,-1019.2 1706.4,-1087.2 1706.4,-1087.2 1706.4,-1093.2 1700.4,-1099.2 1694.4,-1099.2" style=""/>
+<text text-anchor="middle" x="1650.28" y="-1082.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">VLDL &lt;= 0.95</text>
+<text text-anchor="middle" x="1650.28" y="-1065.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.292</text>
+<text text-anchor="middle" x="1650.28" y="-1049" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 79</text>
+<text text-anchor="middle" x="1650.28" y="-1032.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [14, 65]</text>
+<text text-anchor="middle" x="1650.28" y="-1015.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 60&#45;&gt;62 -->
+<g id="edge62" class="edge" data-name="60-&gt;62">
+
+<path fill="none" stroke="black" d="M1551.87,-1134.71C1563,-1125.61 1574.77,-1115.98 1586.15,-1106.67" style=""/>
+<polygon fill="black" stroke="black" points="1588.07,-1109.62 1593.59,-1100.58 1583.63,-1104.2 1588.07,-1109.62" style=""/>
+</g>
+<!-- 63 -->
+<g id="node64" class="node" pointer-events="visible" data-name="63">
+
+<path fill="#46a4e7" stroke="black" d="M1690.62,-971.2C1690.62,-971.2 1609.94,-971.2 1609.94,-971.2 1603.94,-971.2 1597.94,-965.2 1597.94,-959.2 1597.94,-959.2 1597.94,-891.2 1597.94,-891.2 1597.94,-885.2 1603.94,-879.2 1609.94,-879.2 1609.94,-879.2 1690.62,-879.2 1690.62,-879.2 1696.62,-879.2 1702.62,-885.2 1702.62,-891.2 1702.62,-891.2 1702.62,-959.2 1702.62,-959.2 1702.62,-965.2 1696.62,-971.2 1690.62,-971.2" style=""/>
+<text text-anchor="middle" x="1650.28" y="-954.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">LDL &lt;= 3.35</text>
+<text text-anchor="middle" x="1650.28" y="-937.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.117</text>
+<text text-anchor="middle" x="1650.28" y="-921" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 32</text>
+<text text-anchor="middle" x="1650.28" y="-904.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [2, 30]</text>
+<text text-anchor="middle" x="1650.28" y="-887.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 62&#45;&gt;63 -->
+<g id="edge63" class="edge" data-name="62-&gt;63">
+
+<path fill="none" stroke="black" d="M1650.28,-1006.71C1650.28,-999.04 1650.28,-990.99 1650.28,-983.07" style=""/>
+<polygon fill="black" stroke="black" points="1653.78,-983.14 1650.28,-973.14 1646.78,-983.14 1653.78,-983.14" style=""/>
+</g>
+<!-- 70 -->
+<g id="node71" class="node" pointer-events="visible" data-name="70">
+
+<path fill="#7dbfee" stroke="black" d="M1940.26,-971.2C1940.26,-971.2 1828.3,-971.2 1828.3,-971.2 1822.3,-971.2 1816.3,-965.2 1816.3,-959.2 1816.3,-959.2 1816.3,-891.2 1816.3,-891.2 1816.3,-885.2 1822.3,-879.2 1828.3,-879.2 1828.3,-879.2 1940.26,-879.2 1940.26,-879.2 1946.26,-879.2 1952.26,-885.2 1952.26,-891.2 1952.26,-891.2 1952.26,-959.2 1952.26,-959.2 1952.26,-965.2 1946.26,-971.2 1940.26,-971.2" style=""/>
+<text text-anchor="middle" x="1884.28" y="-954.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">VLDL &lt;= 1.95</text>
+<text text-anchor="middle" x="1884.28" y="-937.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.38</text>
+<text text-anchor="middle" x="1884.28" y="-921" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 47</text>
+<text text-anchor="middle" x="1884.28" y="-904.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [12.0, 35.0]</text>
+<text text-anchor="middle" x="1884.28" y="-887.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 62&#45;&gt;70 -->
+<g id="edge70" class="edge" data-name="62-&gt;70">
+
+<path fill="none" stroke="black" d="M1706.62,-1021.86C1736.41,-1005.82 1773.43,-985.89 1805.97,-968.37" style=""/>
+<polygon fill="black" stroke="black" points="1807.43,-971.56 1814.57,-963.73 1804.11,-965.39 1807.43,-971.56" style=""/>
+</g>
+<!-- 64 -->
+<g id="node65" class="node" pointer-events="visible" data-name="64">
+
+<path fill="#399de5" stroke="black" d="M1651.62,-834.9C1651.62,-834.9 1570.94,-834.9 1570.94,-834.9 1564.94,-834.9 1558.94,-828.9 1558.94,-822.9 1558.94,-822.9 1558.94,-771.5 1558.94,-771.5 1558.94,-765.5 1564.94,-759.5 1570.94,-759.5 1570.94,-759.5 1651.62,-759.5 1651.62,-759.5 1657.62,-759.5 1663.62,-765.5 1663.62,-771.5 1663.62,-771.5 1663.62,-822.9 1663.62,-822.9 1663.62,-828.9 1657.62,-834.9 1651.62,-834.9" style=""/>
+<text text-anchor="middle" x="1611.28" y="-818.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.0</text>
+<text text-anchor="middle" x="1611.28" y="-801.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 25</text>
+<text text-anchor="middle" x="1611.28" y="-784.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [0, 25]</text>
+<text text-anchor="middle" x="1611.28" y="-767.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 63&#45;&gt;64 -->
+<g id="edge64" class="edge" data-name="63-&gt;64">
+
+<path fill="none" stroke="black" d="M1636.2,-878.71C1632.93,-868.14 1629.43,-856.86 1626.13,-846.19" style=""/>
+<polygon fill="black" stroke="black" points="1629.52,-845.31 1623.22,-836.79 1622.84,-847.38 1629.52,-845.31" style=""/>
+</g>
+<!-- 65 -->
+<g id="node66" class="node" pointer-events="visible" data-name="65">
+
+<path fill="#88c4ef" stroke="black" d="M1765.33,-843.2C1765.33,-843.2 1693.22,-843.2 1693.22,-843.2 1687.22,-843.2 1681.22,-837.2 1681.22,-831.2 1681.22,-831.2 1681.22,-763.2 1681.22,-763.2 1681.22,-757.2 1687.22,-751.2 1693.22,-751.2 1693.22,-751.2 1765.33,-751.2 1765.33,-751.2 1771.33,-751.2 1777.33,-757.2 1777.33,-763.2 1777.33,-763.2 1777.33,-831.2 1777.33,-831.2 1777.33,-837.2 1771.33,-843.2 1765.33,-843.2" style=""/>
+<text text-anchor="middle" x="1729.28" y="-826.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">HDL &lt;= 0.85</text>
+<text text-anchor="middle" x="1729.28" y="-809.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.408</text>
+<text text-anchor="middle" x="1729.28" y="-793" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 7</text>
+<text text-anchor="middle" x="1729.28" y="-776.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [2, 5]</text>
+<text text-anchor="middle" x="1729.28" y="-759.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 63&#45;&gt;65 -->
+<g id="edge65" class="edge" data-name="63-&gt;65">
+
+<path fill="none" stroke="black" d="M1678.8,-878.71C1684,-870.41 1689.48,-861.68 1694.83,-853.14" style=""/>
+<polygon fill="black" stroke="black" points="1697.65,-855.24 1699.99,-844.9 1691.72,-851.52 1697.65,-855.24" style=""/>
+</g>
+<!-- 66 -->
+<g id="node67" class="node" pointer-events="visible" data-name="66">
+
+<path fill="#f2c09c" stroke="black" d="M1688.68,-715.2C1688.68,-715.2 1609.88,-715.2 1609.88,-715.2 1603.88,-715.2 1597.88,-709.2 1597.88,-703.2 1597.88,-703.2 1597.88,-635.2 1597.88,-635.2 1597.88,-629.2 1603.88,-623.2 1609.88,-623.2 1609.88,-623.2 1688.68,-623.2 1688.68,-623.2 1694.68,-623.2 1700.68,-629.2 1700.68,-635.2 1700.68,-635.2 1700.68,-703.2 1700.68,-703.2 1700.68,-709.2 1694.68,-715.2 1688.68,-715.2" style=""/>
+<text text-anchor="middle" x="1649.28" y="-698.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">VLDL &lt;= 0.85</text>
+<text text-anchor="middle" x="1649.28" y="-681.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.444</text>
+<text text-anchor="middle" x="1649.28" y="-665" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 3</text>
+<text text-anchor="middle" x="1649.28" y="-648.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [2, 1]</text>
+<text text-anchor="middle" x="1649.28" y="-631.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 0</text>
+</g>
+<!-- 65&#45;&gt;66 -->
+<g id="edge66" class="edge" data-name="65-&gt;66">
+
+<path fill="none" stroke="black" d="M1700.4,-750.71C1695.13,-742.41 1689.58,-733.68 1684.16,-725.14" style=""/>
+<polygon fill="black" stroke="black" points="1687.24,-723.47 1678.93,-716.9 1681.33,-727.22 1687.24,-723.47" style=""/>
+</g>
+<!-- 69 -->
+<g id="node70" class="node" pointer-events="visible" data-name="69">
+
+<path fill="#399de5" stroke="black" d="M1802.33,-706.9C1802.33,-706.9 1730.22,-706.9 1730.22,-706.9 1724.22,-706.9 1718.22,-700.9 1718.22,-694.9 1718.22,-694.9 1718.22,-643.5 1718.22,-643.5 1718.22,-637.5 1724.22,-631.5 1730.22,-631.5 1730.22,-631.5 1802.33,-631.5 1802.33,-631.5 1808.33,-631.5 1814.33,-637.5 1814.33,-643.5 1814.33,-643.5 1814.33,-694.9 1814.33,-694.9 1814.33,-700.9 1808.33,-706.9 1802.33,-706.9" style=""/>
+<text text-anchor="middle" x="1766.28" y="-690.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.0</text>
+<text text-anchor="middle" x="1766.28" y="-673.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 4</text>
+<text text-anchor="middle" x="1766.28" y="-656.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [0, 4]</text>
+<text text-anchor="middle" x="1766.28" y="-639.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 65&#45;&gt;69 -->
+<g id="edge69" class="edge" data-name="65-&gt;69">
+
+<path fill="none" stroke="black" d="M1742.64,-750.71C1745.74,-740.14 1749.05,-728.86 1752.19,-718.19" style=""/>
+<polygon fill="black" stroke="black" points="1755.48,-719.38 1754.94,-708.8 1748.77,-717.4 1755.48,-719.38" style=""/>
+</g>
+<!-- 67 -->
+<g id="node68" class="node" pointer-events="visible" data-name="67">
+
+<path fill="#e58139" stroke="black" d="M1573.33,-578.9C1573.33,-578.9 1501.22,-578.9 1501.22,-578.9 1495.22,-578.9 1489.22,-572.9 1489.22,-566.9 1489.22,-566.9 1489.22,-515.5 1489.22,-515.5 1489.22,-509.5 1495.22,-503.5 1501.22,-503.5 1501.22,-503.5 1573.33,-503.5 1573.33,-503.5 1579.33,-503.5 1585.33,-509.5 1585.33,-515.5 1585.33,-515.5 1585.33,-566.9 1585.33,-566.9 1585.33,-572.9 1579.33,-578.9 1573.33,-578.9" style=""/>
+<text text-anchor="middle" x="1537.28" y="-562.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.0</text>
+<text text-anchor="middle" x="1537.28" y="-545.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 2</text>
+<text text-anchor="middle" x="1537.28" y="-528.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [2, 0]</text>
+<text text-anchor="middle" x="1537.28" y="-511.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 0</text>
+</g>
+<!-- 66&#45;&gt;67 -->
+<g id="edge67" class="edge" data-name="66-&gt;67">
+
+<path fill="none" stroke="black" d="M1608.84,-622.71C1598.76,-611.36 1587.94,-599.19 1577.85,-587.84" style=""/>
+<polygon fill="black" stroke="black" points="1580.56,-585.62 1571.3,-580.48 1575.33,-590.27 1580.56,-585.62" style=""/>
+</g>
+<!-- 68 -->
+<g id="node69" class="node" pointer-events="visible" data-name="68">
+
+<path fill="#399de5" stroke="black" d="M1688.33,-578.9C1688.33,-578.9 1616.22,-578.9 1616.22,-578.9 1610.22,-578.9 1604.22,-572.9 1604.22,-566.9 1604.22,-566.9 1604.22,-515.5 1604.22,-515.5 1604.22,-509.5 1610.22,-503.5 1616.22,-503.5 1616.22,-503.5 1688.33,-503.5 1688.33,-503.5 1694.33,-503.5 1700.33,-509.5 1700.33,-515.5 1700.33,-515.5 1700.33,-566.9 1700.33,-566.9 1700.33,-572.9 1694.33,-578.9 1688.33,-578.9" style=""/>
+<text text-anchor="middle" x="1652.28" y="-562.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.0</text>
+<text text-anchor="middle" x="1652.28" y="-545.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 1</text>
+<text text-anchor="middle" x="1652.28" y="-528.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [0, 1]</text>
+<text text-anchor="middle" x="1652.28" y="-511.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 66&#45;&gt;68 -->
+<g id="edge68" class="edge" data-name="66-&gt;68">
+
+<path fill="none" stroke="black" d="M1650.36,-622.71C1650.61,-612.25 1650.88,-601.1 1651.13,-590.53" style=""/>
+<polygon fill="black" stroke="black" points="1654.62,-590.94 1651.36,-580.86 1647.62,-590.77 1654.62,-590.94" style=""/>
+</g>
+<!-- 71 -->
+<g id="node72" class="node" pointer-events="visible" data-name="71">
+
+<path fill="#a5d2f3" stroke="black" d="M1928.4,-843.2C1928.4,-843.2 1840.15,-843.2 1840.15,-843.2 1834.15,-843.2 1828.15,-837.2 1828.15,-831.2 1828.15,-831.2 1828.15,-763.2 1828.15,-763.2 1828.15,-757.2 1834.15,-751.2 1840.15,-751.2 1840.15,-751.2 1928.4,-751.2 1928.4,-751.2 1934.4,-751.2 1940.4,-757.2 1940.4,-763.2 1940.4,-763.2 1940.4,-831.2 1940.4,-831.2 1940.4,-837.2 1934.4,-843.2 1928.4,-843.2" style=""/>
+<text text-anchor="middle" x="1884.28" y="-826.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">LDL &lt;= 2.85</text>
+<text text-anchor="middle" x="1884.28" y="-809.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.457</text>
+<text text-anchor="middle" x="1884.28" y="-793" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 34</text>
+<text text-anchor="middle" x="1884.28" y="-776.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [12, 22]</text>
+<text text-anchor="middle" x="1884.28" y="-759.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 70&#45;&gt;71 -->
+<g id="edge71" class="edge" data-name="70-&gt;71">
+
+<path fill="none" stroke="black" d="M1884.28,-878.71C1884.28,-871.04 1884.28,-862.99 1884.28,-855.07" style=""/>
+<polygon fill="black" stroke="black" points="1887.78,-855.14 1884.28,-845.14 1880.78,-855.14 1887.78,-855.14" style=""/>
+</g>
+<!-- 86 -->
+<g id="node87" class="node" pointer-events="visible" data-name="86">
+
+<path fill="#399de5" stroke="black" d="M2050.62,-834.9C2050.62,-834.9 1969.94,-834.9 1969.94,-834.9 1963.94,-834.9 1957.94,-828.9 1957.94,-822.9 1957.94,-822.9 1957.94,-771.5 1957.94,-771.5 1957.94,-765.5 1963.94,-759.5 1969.94,-759.5 1969.94,-759.5 2050.62,-759.5 2050.62,-759.5 2056.62,-759.5 2062.62,-765.5 2062.62,-771.5 2062.62,-771.5 2062.62,-822.9 2062.62,-822.9 2062.62,-828.9 2056.62,-834.9 2050.62,-834.9" style=""/>
+<text text-anchor="middle" x="2010.28" y="-818.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.0</text>
+<text text-anchor="middle" x="2010.28" y="-801.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 13</text>
+<text text-anchor="middle" x="2010.28" y="-784.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [0, 13]</text>
+<text text-anchor="middle" x="2010.28" y="-767.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 70&#45;&gt;86 -->
+<g id="edge86" class="edge" data-name="70-&gt;86">
+
+<path fill="none" stroke="black" d="M1929.77,-878.71C1941.34,-867.14 1953.76,-854.72 1965.3,-843.17" style=""/>
+<polygon fill="black" stroke="black" points="1967.47,-845.96 1972.06,-836.41 1962.52,-841.01 1967.47,-845.96" style=""/>
+</g>
+<!-- 72 -->
+<g id="node73" class="node" pointer-events="visible" data-name="72">
+
+<path fill="#fae8db" stroke="black" d="M1924.62,-715.2C1924.62,-715.2 1843.94,-715.2 1843.94,-715.2 1837.94,-715.2 1831.94,-709.2 1831.94,-703.2 1831.94,-703.2 1831.94,-635.2 1831.94,-635.2 1831.94,-629.2 1837.94,-623.2 1843.94,-623.2 1843.94,-623.2 1924.62,-623.2 1924.62,-623.2 1930.62,-623.2 1936.62,-629.2 1936.62,-635.2 1936.62,-635.2 1936.62,-703.2 1936.62,-703.2 1936.62,-709.2 1930.62,-715.2 1924.62,-715.2" style=""/>
+<text text-anchor="middle" x="1884.28" y="-698.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">HbA1c &lt;= 6.2</text>
+<text text-anchor="middle" x="1884.28" y="-681.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.495</text>
+<text text-anchor="middle" x="1884.28" y="-665" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 20</text>
+<text text-anchor="middle" x="1884.28" y="-648.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [11, 9]</text>
+<text text-anchor="middle" x="1884.28" y="-631.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 0</text>
+</g>
+<!-- 71&#45;&gt;72 -->
+<g id="edge72" class="edge" data-name="71-&gt;72">
+
+<path fill="none" stroke="black" d="M1884.28,-750.71C1884.28,-743.04 1884.28,-734.99 1884.28,-727.07" style=""/>
+<polygon fill="black" stroke="black" points="1887.78,-727.14 1884.28,-717.14 1880.78,-727.14 1887.78,-727.14" style=""/>
+</g>
+<!-- 83 -->
+<g id="node84" class="node" pointer-events="visible" data-name="83">
+
+<path fill="#48a5e7" stroke="black" d="M2046.62,-715.2C2046.62,-715.2 1965.94,-715.2 1965.94,-715.2 1959.94,-715.2 1953.94,-709.2 1953.94,-703.2 1953.94,-703.2 1953.94,-635.2 1953.94,-635.2 1953.94,-629.2 1959.94,-623.2 1965.94,-623.2 1965.94,-623.2 2046.62,-623.2 2046.62,-623.2 2052.62,-623.2 2058.62,-629.2 2058.62,-635.2 2058.62,-635.2 2058.62,-703.2 2058.62,-703.2 2058.62,-709.2 2052.62,-715.2 2046.62,-715.2" style=""/>
+<text text-anchor="middle" x="2006.28" y="-698.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">Cr &lt;= 60.5</text>
+<text text-anchor="middle" x="2006.28" y="-681.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.133</text>
+<text text-anchor="middle" x="2006.28" y="-665" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 14</text>
+<text text-anchor="middle" x="2006.28" y="-648.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [1, 13]</text>
+<text text-anchor="middle" x="2006.28" y="-631.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 71&#45;&gt;83 -->
+<g id="edge83" class="edge" data-name="71-&gt;83">
+
+<path fill="none" stroke="black" d="M1928.32,-750.71C1936.79,-741.97 1945.73,-732.74 1954.41,-723.77" style=""/>
+<polygon fill="black" stroke="black" points="1956.8,-726.33 1961.24,-716.71 1951.77,-721.46 1956.8,-726.33" style=""/>
+</g>
+<!-- 73 -->
+<g id="node74" class="node" pointer-events="visible" data-name="73">
+
+<path fill="#399de5" stroke="black" d="M1803.33,-578.9C1803.33,-578.9 1731.22,-578.9 1731.22,-578.9 1725.22,-578.9 1719.22,-572.9 1719.22,-566.9 1719.22,-566.9 1719.22,-515.5 1719.22,-515.5 1719.22,-509.5 1725.22,-503.5 1731.22,-503.5 1731.22,-503.5 1803.33,-503.5 1803.33,-503.5 1809.33,-503.5 1815.33,-509.5 1815.33,-515.5 1815.33,-515.5 1815.33,-566.9 1815.33,-566.9 1815.33,-572.9 1809.33,-578.9 1803.33,-578.9" style=""/>
+<text text-anchor="middle" x="1767.28" y="-562.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.0</text>
+<text text-anchor="middle" x="1767.28" y="-545.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 3</text>
+<text text-anchor="middle" x="1767.28" y="-528.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [0, 3]</text>
+<text text-anchor="middle" x="1767.28" y="-511.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 72&#45;&gt;73 -->
+<g id="edge73" class="edge" data-name="72-&gt;73">
+
+<path fill="none" stroke="black" d="M1842.04,-622.71C1831.4,-611.25 1819.98,-598.96 1809.35,-587.51" style=""/>
+<polygon fill="black" stroke="black" points="1812.17,-585.4 1802.8,-580.45 1807.04,-590.16 1812.17,-585.4" style=""/>
+</g>
+<!-- 74 -->
+<g id="node75" class="node" pointer-events="visible" data-name="74">
+
+<path fill="#f3c6a5" stroke="black" d="M1925.62,-587.2C1925.62,-587.2 1844.94,-587.2 1844.94,-587.2 1838.94,-587.2 1832.94,-581.2 1832.94,-575.2 1832.94,-575.2 1832.94,-507.2 1832.94,-507.2 1832.94,-501.2 1838.94,-495.2 1844.94,-495.2 1844.94,-495.2 1925.62,-495.2 1925.62,-495.2 1931.62,-495.2 1937.62,-501.2 1937.62,-507.2 1937.62,-507.2 1937.62,-575.2 1937.62,-575.2 1937.62,-581.2 1931.62,-587.2 1925.62,-587.2" style=""/>
+<text text-anchor="middle" x="1885.28" y="-570.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">Urea &lt;= 6.7</text>
+<text text-anchor="middle" x="1885.28" y="-553.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.457</text>
+<text text-anchor="middle" x="1885.28" y="-537" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 17</text>
+<text text-anchor="middle" x="1885.28" y="-520.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [11, 6]</text>
+<text text-anchor="middle" x="1885.28" y="-503.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 0</text>
+</g>
+<!-- 72&#45;&gt;74 -->
+<g id="edge74" class="edge" data-name="72-&gt;74">
+
+<path fill="none" stroke="black" d="M1884.64,-622.71C1884.7,-615.04 1884.76,-606.99 1884.83,-599.07" style=""/>
+<polygon fill="black" stroke="black" points="1888.33,-599.16 1884.9,-589.14 1881.33,-599.11 1888.33,-599.16" style=""/>
+</g>
+<!-- 75 -->
+<g id="node76" class="node" pointer-events="visible" data-name="75">
+
+<path fill="#e58139" stroke="black" d="M1860.33,-450.9C1860.33,-450.9 1788.22,-450.9 1788.22,-450.9 1782.22,-450.9 1776.22,-444.9 1776.22,-438.9 1776.22,-438.9 1776.22,-387.5 1776.22,-387.5 1776.22,-381.5 1782.22,-375.5 1788.22,-375.5 1788.22,-375.5 1860.33,-375.5 1860.33,-375.5 1866.33,-375.5 1872.33,-381.5 1872.33,-387.5 1872.33,-387.5 1872.33,-438.9 1872.33,-438.9 1872.33,-444.9 1866.33,-450.9 1860.33,-450.9" style=""/>
+<text text-anchor="middle" x="1824.28" y="-434.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.0</text>
+<text text-anchor="middle" x="1824.28" y="-417.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 7</text>
+<text text-anchor="middle" x="1824.28" y="-400.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [7, 0]</text>
+<text text-anchor="middle" x="1824.28" y="-383.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 0</text>
+</g>
+<!-- 74&#45;&gt;75 -->
+<g id="edge75" class="edge" data-name="74-&gt;75">
+
+<path fill="none" stroke="black" d="M1863.25,-494.71C1858.03,-483.92 1852.45,-472.39 1847.18,-461.52" style=""/>
+<polygon fill="black" stroke="black" points="1850.43,-460.18 1842.92,-452.71 1844.13,-463.23 1850.43,-460.18" style=""/>
+</g>
+<!-- 76 -->
+<g id="node77" class="node" pointer-events="visible" data-name="76">
+
+<path fill="#bddef6" stroke="black" d="M1988.18,-459.2C1988.18,-459.2 1902.38,-459.2 1902.38,-459.2 1896.38,-459.2 1890.38,-453.2 1890.38,-447.2 1890.38,-447.2 1890.38,-379.2 1890.38,-379.2 1890.38,-373.2 1896.38,-367.2 1902.38,-367.2 1902.38,-367.2 1988.18,-367.2 1988.18,-367.2 1994.18,-367.2 2000.18,-373.2 2000.18,-379.2 2000.18,-379.2 2000.18,-447.2 2000.18,-447.2 2000.18,-453.2 1994.18,-459.2 1988.18,-459.2" style=""/>
+<text text-anchor="middle" x="1945.28" y="-442.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">HbA1c &lt;= 7.85</text>
+<text text-anchor="middle" x="1945.28" y="-425.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.48</text>
+<text text-anchor="middle" x="1945.28" y="-409" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 10</text>
+<text text-anchor="middle" x="1945.28" y="-392.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [4, 6]</text>
+<text text-anchor="middle" x="1945.28" y="-375.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 74&#45;&gt;76 -->
+<g id="edge76" class="edge" data-name="74-&gt;76">
+
+<path fill="none" stroke="black" d="M1906.94,-494.71C1910.76,-486.68 1914.78,-478.24 1918.72,-469.97" style=""/>
+<polygon fill="black" stroke="black" points="1921.86,-471.52 1923,-460.99 1915.54,-468.51 1921.86,-471.52" style=""/>
+</g>
+<!-- 77 -->
+<g id="node78" class="node" pointer-events="visible" data-name="77">
+
+<path fill="#399de5" stroke="black" d="M1923.33,-322.9C1923.33,-322.9 1851.22,-322.9 1851.22,-322.9 1845.22,-322.9 1839.22,-316.9 1839.22,-310.9 1839.22,-310.9 1839.22,-259.5 1839.22,-259.5 1839.22,-253.5 1845.22,-247.5 1851.22,-247.5 1851.22,-247.5 1923.33,-247.5 1923.33,-247.5 1929.33,-247.5 1935.33,-253.5 1935.33,-259.5 1935.33,-259.5 1935.33,-310.9 1935.33,-310.9 1935.33,-316.9 1929.33,-322.9 1923.33,-322.9" style=""/>
+<text text-anchor="middle" x="1887.28" y="-306.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.0</text>
+<text text-anchor="middle" x="1887.28" y="-289.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 3</text>
+<text text-anchor="middle" x="1887.28" y="-272.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [0, 3]</text>
+<text text-anchor="middle" x="1887.28" y="-255.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 76&#45;&gt;77 -->
+<g id="edge77" class="edge" data-name="76-&gt;77">
+
+<path fill="none" stroke="black" d="M1924.34,-366.71C1919.37,-355.92 1914.06,-344.39 1909.06,-333.52" style=""/>
+<polygon fill="black" stroke="black" points="1912.37,-332.34 1905.01,-324.72 1906.01,-335.27 1912.37,-332.34" style=""/>
+</g>
+<!-- 78 -->
+<g id="node79" class="node" pointer-events="visible" data-name="78">
+
+<path fill="#f8e0ce" stroke="black" d="M2038.33,-331.2C2038.33,-331.2 1966.22,-331.2 1966.22,-331.2 1960.22,-331.2 1954.22,-325.2 1954.22,-319.2 1954.22,-319.2 1954.22,-251.2 1954.22,-251.2 1954.22,-245.2 1960.22,-239.2 1966.22,-239.2 1966.22,-239.2 2038.33,-239.2 2038.33,-239.2 2044.33,-239.2 2050.33,-245.2 2050.33,-251.2 2050.33,-251.2 2050.33,-319.2 2050.33,-319.2 2050.33,-325.2 2044.33,-331.2 2038.33,-331.2" style=""/>
+<text text-anchor="middle" x="2002.28" y="-314.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">TG &lt;= 2.8</text>
+<text text-anchor="middle" x="2002.28" y="-297.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.49</text>
+<text text-anchor="middle" x="2002.28" y="-281" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 7</text>
+<text text-anchor="middle" x="2002.28" y="-264.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [4, 3]</text>
+<text text-anchor="middle" x="2002.28" y="-247.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 0</text>
+</g>
+<!-- 76&#45;&gt;78 -->
+<g id="edge78" class="edge" data-name="76-&gt;78">
+
+<path fill="none" stroke="black" d="M1965.86,-366.71C1969.49,-358.68 1973.31,-350.24 1977.05,-341.97" style=""/>
+<polygon fill="black" stroke="black" points="1980.17,-343.55 1981.11,-333 1973.79,-340.67 1980.17,-343.55" style=""/>
+</g>
+<!-- 79 -->
+<g id="node80" class="node" pointer-events="visible" data-name="79">
+
+<path fill="#e58139" stroke="black" d="M1980.33,-194.9C1980.33,-194.9 1908.22,-194.9 1908.22,-194.9 1902.22,-194.9 1896.22,-188.9 1896.22,-182.9 1896.22,-182.9 1896.22,-131.5 1896.22,-131.5 1896.22,-125.5 1902.22,-119.5 1908.22,-119.5 1908.22,-119.5 1980.33,-119.5 1980.33,-119.5 1986.33,-119.5 1992.33,-125.5 1992.33,-131.5 1992.33,-131.5 1992.33,-182.9 1992.33,-182.9 1992.33,-188.9 1986.33,-194.9 1980.33,-194.9" style=""/>
+<text text-anchor="middle" x="1944.28" y="-178.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.0</text>
+<text text-anchor="middle" x="1944.28" y="-161.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 3</text>
+<text text-anchor="middle" x="1944.28" y="-144.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [3, 0]</text>
+<text text-anchor="middle" x="1944.28" y="-127.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 0</text>
+</g>
+<!-- 78&#45;&gt;79 -->
+<g id="edge79" class="edge" data-name="78-&gt;79">
+
+<path fill="none" stroke="black" d="M1981.34,-238.71C1976.37,-227.92 1971.06,-216.39 1966.06,-205.52" style=""/>
+<polygon fill="black" stroke="black" points="1969.37,-204.34 1962.01,-196.72 1963.01,-207.27 1969.37,-204.34" style=""/>
+</g>
+<!-- 80 -->
+<g id="node81" class="node" pointer-events="visible" data-name="80">
+
+<path fill="#7bbeee" stroke="black" d="M2095.33,-203.2C2095.33,-203.2 2023.22,-203.2 2023.22,-203.2 2017.22,-203.2 2011.22,-197.2 2011.22,-191.2 2011.22,-191.2 2011.22,-123.2 2011.22,-123.2 2011.22,-117.2 2017.22,-111.2 2023.22,-111.2 2023.22,-111.2 2095.33,-111.2 2095.33,-111.2 2101.33,-111.2 2107.33,-117.2 2107.33,-123.2 2107.33,-123.2 2107.33,-191.2 2107.33,-191.2 2107.33,-197.2 2101.33,-203.2 2095.33,-203.2" style=""/>
+<text text-anchor="middle" x="2059.28" y="-186.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">BMI &lt;= 36.0</text>
+<text text-anchor="middle" x="2059.28" y="-169.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.375</text>
+<text text-anchor="middle" x="2059.28" y="-153" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 4</text>
+<text text-anchor="middle" x="2059.28" y="-136.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [1, 3]</text>
+<text text-anchor="middle" x="2059.28" y="-119.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 78&#45;&gt;80 -->
+<g id="edge80" class="edge" data-name="78-&gt;80">
+
+<path fill="none" stroke="black" d="M2022.86,-238.71C2026.49,-230.68 2030.31,-222.24 2034.05,-213.97" style=""/>
+<polygon fill="black" stroke="black" points="2037.17,-215.55 2038.11,-205 2030.79,-212.67 2037.17,-215.55" style=""/>
+</g>
+<!-- 81 -->
+<g id="node82" class="node" pointer-events="visible" data-name="81">
+
+<path fill="#399de5" stroke="black" d="M2038.33,-75.3C2038.33,-75.3 1966.22,-75.3 1966.22,-75.3 1960.22,-75.3 1954.22,-69.3 1954.22,-63.3 1954.22,-63.3 1954.22,-11.9 1954.22,-11.9 1954.22,-5.9 1960.22,0.1 1966.22,0.1 1966.22,0.1 2038.33,0.1 2038.33,0.1 2044.33,0.1 2050.33,-5.9 2050.33,-11.9 2050.33,-11.9 2050.33,-63.3 2050.33,-63.3 2050.33,-69.3 2044.33,-75.3 2038.33,-75.3" style=""/>
+<text text-anchor="middle" x="2002.28" y="-58.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.0</text>
+<text text-anchor="middle" x="2002.28" y="-41.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 3</text>
+<text text-anchor="middle" x="2002.28" y="-25" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [0, 3]</text>
+<text text-anchor="middle" x="2002.28" y="-8.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 80&#45;&gt;81 -->
+<g id="edge81" class="edge" data-name="80-&gt;81">
+
+<path fill="none" stroke="black" d="M2037.24,-110.73C2033.27,-102.55 2029.13,-94.01 2025.15,-85.78" style=""/>
+<polygon fill="black" stroke="black" points="2028.37,-84.41 2020.86,-76.94 2022.07,-87.47 2028.37,-84.41" style=""/>
+</g>
+<!-- 82 -->
+<g id="node83" class="node" pointer-events="visible" data-name="82">
+
+<path fill="#e58139" stroke="black" d="M2153.33,-75.3C2153.33,-75.3 2081.22,-75.3 2081.22,-75.3 2075.22,-75.3 2069.22,-69.3 2069.22,-63.3 2069.22,-63.3 2069.22,-11.9 2069.22,-11.9 2069.22,-5.9 2075.22,0.1 2081.22,0.1 2081.22,0.1 2153.33,0.1 2153.33,0.1 2159.33,0.1 2165.33,-5.9 2165.33,-11.9 2165.33,-11.9 2165.33,-63.3 2165.33,-63.3 2165.33,-69.3 2159.33,-75.3 2153.33,-75.3" style=""/>
+<text text-anchor="middle" x="2117.28" y="-58.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.0</text>
+<text text-anchor="middle" x="2117.28" y="-41.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 1</text>
+<text text-anchor="middle" x="2117.28" y="-25" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [1, 0]</text>
+<text text-anchor="middle" x="2117.28" y="-8.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 0</text>
+</g>
+<!-- 80&#45;&gt;82 -->
+<g id="edge82" class="edge" data-name="80-&gt;82">
+
+<path fill="none" stroke="black" d="M2081.7,-110.73C2085.74,-102.55 2089.95,-94.01 2094.01,-85.78" style=""/>
+<polygon fill="black" stroke="black" points="2097.09,-87.45 2098.37,-76.94 2090.81,-84.36 2097.09,-87.45" style=""/>
+</g>
+<!-- 84 -->
+<g id="node85" class="node" pointer-events="visible" data-name="84">
+
+<path fill="#e58139" stroke="black" d="M2041.33,-578.9C2041.33,-578.9 1969.22,-578.9 1969.22,-578.9 1963.22,-578.9 1957.22,-572.9 1957.22,-566.9 1957.22,-566.9 1957.22,-515.5 1957.22,-515.5 1957.22,-509.5 1963.22,-503.5 1969.22,-503.5 1969.22,-503.5 2041.33,-503.5 2041.33,-503.5 2047.33,-503.5 2053.33,-509.5 2053.33,-515.5 2053.33,-515.5 2053.33,-566.9 2053.33,-566.9 2053.33,-572.9 2047.33,-578.9 2041.33,-578.9" style=""/>
+<text text-anchor="middle" x="2005.28" y="-562.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.0</text>
+<text text-anchor="middle" x="2005.28" y="-545.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 1</text>
+<text text-anchor="middle" x="2005.28" y="-528.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [1, 0]</text>
+<text text-anchor="middle" x="2005.28" y="-511.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 0</text>
+</g>
+<!-- 83&#45;&gt;84 -->
+<g id="edge84" class="edge" data-name="83-&gt;84">
+
+<path fill="none" stroke="black" d="M2005.92,-622.71C2005.83,-612.25 2005.74,-601.1 2005.66,-590.53" style=""/>
+<polygon fill="black" stroke="black" points="2009.16,-590.83 2005.58,-580.86 2002.16,-590.88 2009.16,-590.83" style=""/>
+</g>
+<!-- 85 -->
+<g id="node86" class="node" pointer-events="visible" data-name="85">
+
+<path fill="#399de5" stroke="black" d="M2163.62,-578.9C2163.62,-578.9 2082.94,-578.9 2082.94,-578.9 2076.94,-578.9 2070.94,-572.9 2070.94,-566.9 2070.94,-566.9 2070.94,-515.5 2070.94,-515.5 2070.94,-509.5 2076.94,-503.5 2082.94,-503.5 2082.94,-503.5 2163.62,-503.5 2163.62,-503.5 2169.62,-503.5 2175.62,-509.5 2175.62,-515.5 2175.62,-515.5 2175.62,-566.9 2175.62,-566.9 2175.62,-572.9 2169.62,-578.9 2163.62,-578.9" style=""/>
+<text text-anchor="middle" x="2123.28" y="-562.2" font-family="Helvetica,sans-Serif" font-size="14.00" style="">gini = 0.0</text>
+<text text-anchor="middle" x="2123.28" y="-545.4" font-family="Helvetica,sans-Serif" font-size="14.00" style="">samples = 13</text>
+<text text-anchor="middle" x="2123.28" y="-528.6" font-family="Helvetica,sans-Serif" font-size="14.00" style="">value = [0, 13]</text>
+<text text-anchor="middle" x="2123.28" y="-511.8" font-family="Helvetica,sans-Serif" font-size="14.00" style="">class = 1</text>
+</g>
+<!-- 83&#45;&gt;85 -->
+<g id="edge85" class="edge" data-name="83-&gt;85">
+
+<path fill="none" stroke="black" d="M2048.52,-622.71C2059.16,-611.25 2070.58,-598.96 2081.21,-587.51" style=""/>
+<polygon fill="black" stroke="black" points="2083.52,-590.16 2087.76,-580.45 2078.39,-585.4 2083.52,-590.16" style=""/>
+</g>
+</g>
+</svg>
