@@ -23,6 +23,7 @@ model.fit(X_train, y_train)
 
 # Use the trained model to make predictions on the test set
 predictions = model.predict(X_test)
+print(predictions)
 
 # Calculate the accuracy of the model based on the predictions
 score = accuracy_score(y_test, predictions)
