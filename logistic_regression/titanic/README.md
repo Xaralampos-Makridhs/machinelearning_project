@@ -5,7 +5,7 @@ This project uses logistic regression to predict the survival probability of pas
 ## Contents
 
 - `train.csv`: The dataset containing data for passengers aboard the Titanic, including features like age, sex, fare, and survival status.
-- `titanic_survival_prediction.py`: The main script of the project that preprocesses the data, trains the model, and generates predictions.
+- `titanic.py`: The main script of the project that preprocesses the data, trains the model, and generates predictions.
 
 ## Description
 
