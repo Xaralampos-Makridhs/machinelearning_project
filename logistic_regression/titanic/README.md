@@ -26,7 +26,7 @@ To run the project, you will need to have the following Python libraries install
 - `numpy`: For performing mathematical operations on arrays.
 - `scikit-learn`: For implementing machine learning algorithms, preprocessing, and model evaluation.
 
-## Handmade notes for Titanic Survival Prediction:
+## Handmade notes for LogisticsRegression():
 
 ![logistics1](https://github.com/user-attachments/assets/6075b0dd-b288-4cee-b6ab-37d8499de54d)
 
