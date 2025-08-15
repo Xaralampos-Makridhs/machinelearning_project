@@ -28,3 +28,7 @@ To run the project, you will need to have the following Python libraries install
 
 ## Handmade notes for Titanic Survival Prediction:
 
+![logistics1](https://github.com/user-attachments/assets/6075b0dd-b288-4cee-b6ab-37d8499de54d)
+
+![logistics2](https://github.com/user-attachments/assets/15b6c0e5-8b75-49f4-bd1b-3cac429d4ee7)
+
