@@ -11,10 +11,7 @@ For each algorithm, we describe its main characteristics and when it is best to 
 - Used for **continuous data** (numerical values).
 - Models the relationship between one or more independent variables (**features**) and a dependent variable (**target**).
 - Tries to find the "line" (or hyperplane in higher dimensions) that best fits the data.
-- The main equation is:
-  \[
-  y = β_0 + β_1x_1 + β_2x_2 + ... + β_nx_n
-  \]
+
 
 ### When to use:
 - When you want to predict **quantitative values** (e.g., house price, sales, temperature).
@@ -39,7 +36,6 @@ For each algorithm, we describe its main characteristics and when it is best to 
 
 ## 🔹 3. K-Nearest Neighbors (KNN)
 ### Characteristics:
-- A **non-parametric algorithm**.
 - For a new observation, it looks at the **K nearest neighbors** in the training data.
 - Depending on the task:
   - **Classification**: assigns the majority class among the neighbors.
