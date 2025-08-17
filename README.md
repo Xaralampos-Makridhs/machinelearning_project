@@ -1,6 +1,7 @@
 # Machine Learning Algorithms in Python
 
-This file introduces three fundamental Machine Learning algorithms often used in Python: **Linear Regression**, **Logistic Regression**, and **K-Nearest Neighbors (KNN)**.  
+This file introduces four fundamental Machine Learning algorithms often used in Python:  
+**Linear Regression**, **Logistic Regression**, **K-Nearest Neighbors (KNN)**, and **Decision Tree**.  
 For each algorithm, we describe its main characteristics and when it is best to use it.
 
 ---
@@ -51,3 +52,22 @@ For each algorithm, we describe its main characteristics and when it is best to 
 - Examples:
   - Handwritten digit recognition.
   - Recommending products based on similar users.
+
+---
+
+## 🔹 4. Decision Tree
+### Characteristics:
+- Splits data into branches based on conditions (rules), forming a **tree-like structure**.
+- Each internal node represents a decision (e.g., "Is age > 30?"), and each leaf node represents the final prediction.
+- Easy to interpret and visualize.
+- Can handle both numerical and categorical data.
+- May overfit if not pruned or regularized.
+
+### When to use:
+- When interpretability is important (easy-to-understand rules).
+- When data contains a mix of numerical and categorical features.
+- Useful for feature selection since the tree highlights the most important features.
+- Examples:
+  - Customer churn prediction.
+  - Medical diagnosis.
+  - Loan approval decisions.
